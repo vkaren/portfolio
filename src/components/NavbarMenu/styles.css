@@ -1,0 +1,121 @@
+/*    Navbar menu    */
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.navbar_menu li {
+  margin: 0 1.5rem;
+  list-style: none;
+}
+
+/*    Navbar menu - Cancel button  /  Overlay */
+.navbar_cancel-button,
+.overlay {
+  display: none;
+}
+
+/*    Navbar menu - Links  */
+.navbar_link {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/*    Navbar menu - Switch    */
+.navbar_switch {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+}
+
+/*    Navbar menu - Switch slider   */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: var(--white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.5rem;
+  bottom: 0.25rem;
+  border-radius: 50%;
+  background-color: var(--green);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/*    Navbar menu - Switch checkbox   */
+.switch-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-checkbox:checked + .switch-slider {
+  background-color: var(--black);
+}
+.switch-checkbox:focus + .switch-slider {
+  box-shadow: 0 0 1px var(--black);
+}
+.switch-checkbox:checked + .switch-slider:before {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@media (max-width: 500px) {
+  .navbar_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 50%;
+    min-width: 24rem;
+    height: 40rem;
+    padding: 1rem 3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(var(--purple), var(--light-purple));
+  }
+
+  .navbar_menu li {
+    margin: 0;
+  }
+
+  .navbar_cancel-button,
+  .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .navbar_cancel-button {
+    margin: 3rem;
+    background: transparent;
+  }
+
+  .overlay {
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background: #00000059;
+  }
+}

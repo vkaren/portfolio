@@ -1,0 +1,17 @@
+/*    Navbar    */
+.navbar_page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  background: var(--purple);
+}
+
+/*    Navbar menu icon    */
+.navbar_show-menu {
+  background: transparent;
+}
