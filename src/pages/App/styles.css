@@ -1,3 +1,12 @@
+:root {
+  --purple: #582eff;
+  --light-purple: #7654ff;
+  --green: #28ca63;
+  --black: #2f2f2f;
+  --gray: #d9d9d9;
+  --white: #ffffff;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-display: swap;
@@ -43,4 +52,19 @@
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--white);
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }

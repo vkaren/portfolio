@@ -1,7 +1,14 @@
+import Navbar from "@components/Navbar";
+import Header from "@components/Header";
 import "./styles.css";
 
 const App = () => {
-  return <h1>My Portfolio</h1>;
+  return (
+    <>
+      <Navbar />
+      <Header />
+    </>
+  );
 };
 
 export default App;

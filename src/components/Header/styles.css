@@ -1,0 +1,29 @@
+/*    Header    */
+.page_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  top: 6rem;
+  min-height: 23rem;
+  padding: 0 20% 4rem 20%;
+  text-align: center;
+  color: var(--white);
+  background: linear-gradient(var(--purple) 20%, var(--light-purple));
+}
+
+/*    Header title    */
+.header_title {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+/*    Header introduction   */
+.header_introduction {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
