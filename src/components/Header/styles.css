@@ -4,11 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 0;
-  top: 6rem;
-  min-height: 23rem;
-  padding: 0 20% 4rem 20%;
+  min-height: 28rem;
+  padding: 6rem 20% 4rem 20%;
   text-align: center;
   color: var(--white);
   background: linear-gradient(var(--purple) 20%, var(--light-purple));

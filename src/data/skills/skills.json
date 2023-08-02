@@ -1,0 +1,32 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "image": "skills/icons/icon-html.png"
+    },
+    {
+      "name": "CSS",
+      "image": "skills/icons/icon-css.png"
+    },
+    {
+      "name": "Javascript",
+      "image": "skills/icons/icon-js.png"
+    },
+    {
+      "name": "React",
+      "image": "skills/icons/icon-react.png"
+    },
+    {
+      "name": "NextJS",
+      "image": "skills/icons/icon-nextjs.png"
+    },
+    {
+      "name": "Webpack",
+      "image": "skills/icons/icon-webpack.png"
+    },
+    {
+      "name": "Git",
+      "image": "skills/icons/icon-git.png"
+    }
+  ]
+}

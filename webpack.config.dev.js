@@ -19,12 +19,13 @@ module.exports = {
       "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
+      "@data": path.resolve(__dirname, "src/data/"),
     },
   },
   module: {
     rules: [
       {
-        test: /\.mjs|js|jsx$/,
+        test: /\.(mjs|js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
