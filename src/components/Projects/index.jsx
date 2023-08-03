@@ -42,11 +42,11 @@ const Projects = () => {
         </button>
 
         <div ref={projectsContainerRef} className="projects_container">
-          {projects.map((project) => {
+          {projects.map((project, i) => {
             const projectImg = require(`@data/${project.image}`);
 
             return (
-              <article className="project">
+              <article key={`project${i}`} className="project">
                 <img
                   className="project_image"
                   src={projectImg}

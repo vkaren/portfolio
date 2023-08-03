@@ -9,10 +9,10 @@ const Skills = () => {
       <h2 className="skills_title">Skills</h2>
 
       <div className="skills_container">
-        {skills.map((skill) => {
+        {skills.map((skill, i) => {
           const skillImg = require(`@data/${skill.image}`);
           return (
-            <article className="skill">
+            <article key={`skill${i}`} className="skill">
               <div className="skill_img">
                 <img src={skillImg} alt={skill.name} />
               </div>{" "}
