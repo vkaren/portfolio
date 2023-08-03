@@ -25,7 +25,13 @@
 
 /*      Skill article - Name     */
 .skill_name {
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--gray);
+}
+
+/*    Dark theme    */
+.skills_section.dark-theme .skill_name {
+  color: var(--white);
 }

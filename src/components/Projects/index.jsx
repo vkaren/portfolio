@@ -1,10 +1,12 @@
-import { createRef } from "react";
+import { createRef, useContext } from "react";
+import { ThemeContext } from "@context/themeContext";
 import projectsData from "@data/projects/projects.json";
-import arrowBackIcon from "@icons/icon-arrow-back.svg";
-import arrowForwardIcon from "@icons/icon-arrow-forward.svg";
+import ArrowBackIcon from "@icons/icon-arrow-back.svg";
+import ArrowForwardIcon from "@icons/icon-arrow-forward.svg";
 import "./styles.css";
 
 const Projects = () => {
+  const { darkTheme } = useContext(ThemeContext);
   const { projects } = projectsData;
   const projectsContainerRef = createRef();
   let slideInterval;
@@ -26,7 +28,7 @@ const Projects = () => {
   const onStopSlide = () => clearInterval(slideInterval);
 
   return (
-    <section className="projects_section">
+    <section className={`projects_section ${darkTheme && "dark-theme"}`}>
       <h2 className="projects_section__title">Projects</h2>
 
       <div className="projects_slider">
@@ -38,7 +40,7 @@ const Projects = () => {
           onTouchCancel={onStopSlide}
           className="projects__slide-back"
         >
-          <img src={arrowBackIcon} alt="arrow back icon" />
+          {<ArrowBackIcon />}
         </button>
 
         <div ref={projectsContainerRef} className="projects_container">
@@ -79,7 +81,7 @@ const Projects = () => {
           onTouchCancel={onStopSlide}
           className="projects__slide-forward"
         >
-          <img src={arrowForwardIcon} alt="arrow forward icon" />
+          {<ArrowForwardIcon />}
         </button>
       </div>
     </section>

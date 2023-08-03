@@ -1,11 +1,17 @@
+import { useContext } from "react";
+import { ThemeContext } from "@context/themeContext";
 import skillsData from "@data/skills/skills.json";
 import "./styles.css";
 
 const Skills = () => {
+  const { darkTheme } = useContext(ThemeContext);
   const { skills } = skillsData;
 
   return (
-    <section id="#skills" className="skills_section">
+    <section
+      id="#skills"
+      className={`skills_section ${darkTheme && "dark-theme"}`}
+    >
       <h2 className="skills_title">Skills</h2>
 
       <div className="skills_container">

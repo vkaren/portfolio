@@ -1,7 +1,11 @@
+import { useContext } from "react";
+import { ThemeContext } from "@context/themeContext";
 import cancelIcon from "@icons/icon-cancel.png";
 import "./styles.css";
 
 const NavbarMenu = ({ onCancelShowMenu }) => {
+  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+
   return (
     <>
       <ul className="navbar_menu">
@@ -38,6 +42,8 @@ const NavbarMenu = ({ onCancelShowMenu }) => {
               name="mode"
               type="checkbox"
               aria-label="enable or disable dark mode"
+              onChange={toggleDarkTheme}
+              checked={darkTheme}
             />
             <span className="switch-slider"></span>
           </label>

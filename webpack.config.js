@@ -21,6 +21,7 @@ module.exports = {
       "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
+      "@context": path.resolve(__dirname, "src/context/"),
       "@data": path.resolve(__dirname, "src/data/"),
     },
   },
@@ -38,8 +39,13 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,

@@ -55,22 +55,18 @@ html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
 }
-
 body {
   min-height: 100vh;
   background: var(--white);
 }
-
 img {
   max-width: 100%;
   min-width: 100%;
 }
-
 button {
   border: none;
   cursor: pointer;
 }
-
 section {
   display: flex;
   flex-direction: column;
@@ -79,9 +75,23 @@ section {
   color: var(--black);
   background: var(--white);
 }
-
 h2 {
   margin-bottom: 3rem;
   font-size: 2.2rem;
   font-weight: 600;
+}
+svg {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+/*    Dark theme    */
+section.dark-theme {
+  color: var(--white);
+  background: var(--black);
+}
+section.dark-theme svg path {
+  fill: var(--white);
 }

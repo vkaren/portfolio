@@ -9,11 +9,11 @@ const Footer = () => {
       <h3 className="footer_title">Contact</h3>
 
       <ul className="footer_contact-list">
-        {contact.map((contactInfo) => {
+        {contact.map((contactInfo, i) => {
           const contactInfoImg = require(`@data/${contactInfo.icon}`);
 
           return (
-            <li>
+            <li key={`contact-${i}`}>
               <a
                 className="contact_link"
                 href={contactInfo.url}

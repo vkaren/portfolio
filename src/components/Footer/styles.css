@@ -2,7 +2,6 @@
 .page_footer {
   min-height: 15rem;
   padding: 3rem;
-  margin-top: 2rem;
   color: var(--white);
   background: var(--purple);
 }
