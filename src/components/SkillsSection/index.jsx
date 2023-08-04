@@ -3,13 +3,13 @@ import { ThemeContext } from "@context/themeContext";
 import skillsData from "@data/skills/skills.json";
 import "./styles.css";
 
-const Skills = () => {
+const SkillsSection = () => {
   const { darkTheme } = useContext(ThemeContext);
   const { skills } = skillsData;
 
   return (
     <section
-      id="#skills"
+      id="skills"
       className={`skills_section ${darkTheme && "dark-theme"}`}
     >
       <h2 className="skills_title">Skills</h2>
@@ -18,10 +18,10 @@ const Skills = () => {
         {skills.map((skill, i) => {
           const skillImg = require(`@data/${skill.image}`);
           return (
-            <article key={`skill${i}`} className="skill">
+            <article key={`skill-${i}`} className="skill">
               <div className="skill_img">
-                <img src={skillImg} alt={skill.name} />
-              </div>{" "}
+                <img src={skillImg} alt={skill.name} loading="lazy" />
+              </div>
               <span className="skill_name">{skill.name}</span>
             </article>
           );
@@ -31,4 +31,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSection;

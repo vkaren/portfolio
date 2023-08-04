@@ -1,27 +1,3 @@
-/*      Projects slider     */
-.projects_slider {
-  position: relative;
-  width: 80%;
-  max-width: 70rem;
-  min-width: 20rem;
-}
-
-/*      Projects slider buttons       */
-.projects__slide-back,
-.projects__slide-forward {
-  position: absolute;
-  top: calc(50% - 1.5rem);
-  width: 3rem;
-  height: 3rem;
-  background: transparent;
-}
-.projects__slide-back {
-  left: -5rem;
-}
-.projects__slide-forward {
-  right: -5rem;
-}
-
 /*      Projects container    */
 .projects_container {
   display: flex;
@@ -93,7 +69,7 @@
 
 /*      Project content - Url      */
 .project_content__url {
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   font-size: 1.2rem;
 }

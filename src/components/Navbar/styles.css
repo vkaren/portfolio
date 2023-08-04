@@ -11,7 +11,13 @@
   background: var(--purple);
 }
 
+/*    Navbar logo icon    */
+.navbar_logo {
+  width: 3rem;
+}
+
 /*    Navbar menu icon    */
 .navbar_show-menu {
-  background: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
 }

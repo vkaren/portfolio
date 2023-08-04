@@ -1,12 +1,11 @@
-import Skills from "@components/Skills";
-import Projects from "@components/Projects";
-import "./styles.css";
+import SkillsSection from "@components/SkillsSection";
+import ProjectsSection from "@components/ProjectsSection";
 
 const Main = () => {
   return (
     <main>
-      <Skills />
-      <Projects />
+      <SkillsSection />
+      <ProjectsSection />
     </main>
   );
 };

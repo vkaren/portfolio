@@ -5,7 +5,7 @@ const Footer = () => {
   const { contact } = contactData;
 
   return (
-    <footer className="page_footer">
+    <footer id="contact" className="page_footer">
       <h3 className="footer_title">Contact</h3>
 
       <ul className="footer_contact-list">

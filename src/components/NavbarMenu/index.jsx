@@ -5,35 +5,29 @@ import "./styles.css";
 
 const NavbarMenu = ({ onCancelShowMenu }) => {
   const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  const pageLinks = ["About", "Skills", "Projects", "Contact"];
 
   return (
     <>
       <ul className="navbar_menu">
         <li>
-          <button onClick={onCancelShowMenu} className="navbar_cancel-button">
+          <button
+            onClick={onCancelShowMenu}
+            className="navbar_cancel-button"
+            aria-label="hide navbar menu"
+          >
             <img src={cancelIcon} alt="cancel icon" />
           </button>
         </li>
-        <li>
-          <a className="navbar_link" href="#about">
-            About
-          </a>
-        </li>
-        <li>
-          <a className="navbar_link" href="#skills">
-            Skills
-          </a>
-        </li>
-        <li>
-          <a className="navbar_link" href="#projects">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a className="navbar_link" href="#contact">
-            Contact
-          </a>
-        </li>
+
+        {pageLinks.map((link) => (
+          <li key={link}>
+            <a className="navbar_link" href={`#${link.toLowerCase()}`}>
+              {link}
+            </a>
+          </li>
+        ))}
+
         <li>
           <label htmlFor="switch" className="navbar_switch">
             <input

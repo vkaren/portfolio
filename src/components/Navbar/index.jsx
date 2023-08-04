@@ -17,12 +17,16 @@ const Navbar = () => {
 
   return (
     <nav className="navbar_page">
-      <div className="navbar_logo">
+      <a className="navbar_logo" href="#">
         <img src={logoIcon} alt="logo icon" />
-      </div>
+      </a>
 
       {!showMenu && (
-        <button onClick={onShowMenu} className="navbar_show-menu">
+        <button
+          onClick={onShowMenu}
+          className="navbar_show-menu"
+          aria-label="show navbar menu"
+        >
           <img src={menuIcon} alt="menu icon" />
         </button>
       )}

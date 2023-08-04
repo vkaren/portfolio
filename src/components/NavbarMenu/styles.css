@@ -6,7 +6,6 @@
 }
 .navbar_menu li {
   margin: 0 1.5rem;
-  list-style: none;
 }
 
 /*    Navbar menu - Cancel button  /  Overlay */
@@ -109,13 +108,12 @@
 
   .navbar_cancel-button {
     margin: 3rem;
-    background: transparent;
   }
 
   .overlay {
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    background: #00000059;
+    background: var(--transparent-black);
   }
 }
