@@ -9,8 +9,12 @@
       "image": "skills/icons/icon-css.png"
     },
     {
-      "name": "Javascript",
+      "name": "JavaScript",
       "image": "skills/icons/icon-js.png"
+    },
+    {
+      "name": "TypeScript",
+      "image": "skills/icons/icon-ts.png"
     },
     {
       "name": "React",
@@ -19,6 +23,10 @@
     {
       "name": "NextJS",
       "image": "skills/icons/icon-nextjs.png"
+    },
+    {
+      "name": "Vite",
+      "image": "skills/icons/icon-vite.png"
     },
     {
       "name": "Webpack",
