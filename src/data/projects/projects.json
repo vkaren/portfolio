@@ -40,6 +40,18 @@
       "url": "https://playmemory-game.netlify.app/"
     },
     {
+      "title": "Rock, paper, scissors",
+      "info": "",
+      "image": "projects/images/rock-paper-scissors.png",
+      "url": "https://gamee-rock-paper-scissors.vercel.app/"
+    },
+    {
+      "title": "IP Address Tracker",
+      "info": "",
+      "image": "projects/images/ip-address-tracker.png",
+      "url": "https://ip-address-tracker-fm.vercel.app/"
+    },
+    {
       "title": "Two factor code input",
       "info": "A 4-digit security code input app that allows enter a two-factor authorization code.",
       "image": "projects/images/two-factor-code.png",
