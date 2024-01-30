@@ -1,0 +1,126 @@
+/*    Navbar     */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 2rem 1rem;
+  background-color: var(--purple);
+}
+
+/*    Navbar logo    */
+.navbar__logo {
+  width: 3rem;
+}
+
+/*    Navbar menu icon (on mobile)    */
+.navbar__menu-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--white);
+  cursor: pointer;
+}
+
+/*    Navbar links on mobile   */
+.navbar__links {
+  display: none;
+  flex-direction: column;
+  gap: 4rem;
+  background: var(--purple);
+}
+
+.navbar__links.show {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 18rem;
+  padding: 1.5rem 1.5rem 3rem 3rem;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/*    Close icon (on mobile)    */
+.links__close-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--white);
+  float: right;
+  cursor: pointer;
+}
+
+/*    Link    */
+.navbar__links .link a {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+/*    Navbar menu - Switch    */
+.navbar_switch {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+}
+
+/*    Navbar menu - Switch slider   */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: var(--white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.5rem;
+  bottom: 0.25rem;
+  border-radius: 50%;
+  background-color: var(--green);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/*    Navbar menu - Switch checkbox   */
+.switch-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-checkbox:checked + .switch-slider {
+  background-color: var(--black);
+}
+.switch-checkbox:focus + .switch-slider {
+  box-shadow: 0 0 1px var(--black);
+}
+.switch-checkbox:checked + .switch-slider:before {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@media (min-width: 600px) {
+  .navbar__links,
+  .navbar__links.show {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding: 0 3rem;
+    border-radius: 0;
+  }
+
+  .navbar__menu-icon,
+  .links__close-icon {
+    display: none;
+  }
+}
