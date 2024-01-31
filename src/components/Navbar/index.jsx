@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
-import logoIcon from "@icons/icon-logo.png";
+import logoIcon from "@images/icon-logo.png";
 import "./style.css";
 
 const Navbar = () => {

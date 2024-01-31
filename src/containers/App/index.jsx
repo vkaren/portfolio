@@ -1,10 +1,12 @@
 import Navbar from "@components/Navbar";
-import "./App.css";
+import Header from "@components/Header";
+import "./style.css";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <Header />
     </>
   );
 };
