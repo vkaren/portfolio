@@ -1,5 +1,6 @@
 import Navbar from "@components/Navbar";
 import Header from "@components/Header";
+import About from "@containers/About";
 import "./style.css";
 
 const App = () => {
@@ -7,6 +8,9 @@ const App = () => {
     <>
       <Navbar />
       <Header />
+      <main>
+        <About />
+      </main>
     </>
   );
 };

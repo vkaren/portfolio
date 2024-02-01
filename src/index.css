@@ -1,6 +1,7 @@
 :root {
   --purple: #6843fe;
   --light-purple: #7654ff;
+  --light-purple-transparent: rgba(118, 84, 255, 0.81);
   --green: #28ca63;
   --black: #2f2f2f;
   --gray: #484848;
@@ -94,6 +95,7 @@ html {
 
 body {
   min-height: 100vh;
+  color: var(--black);
   background: var(--white);
 }
 h1,

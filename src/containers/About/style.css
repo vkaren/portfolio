@@ -1,0 +1,40 @@
+/*    About section      */
+.about_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 8rem;
+  background-color: var(--white);
+}
+
+/*    Subheading     */
+.title__subheading {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/*    Heading      */
+.title__heading {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+/*    Content      */
+.content {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (min-width: 700px) {
+  .about_section {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8rem;
+  }
+
+  .about__title,
+  .about__content {
+    width: 50%;
+  }
+}
