@@ -22,20 +22,20 @@
 /*     Title      */
 .content__title {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 /*     Text      */
 .content__text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 @media (min-width: 700px) {
   .header {
     flex-direction: row;
-    min-height: 50vh;
+    min-height: 60vh;
     background: url("/src/assets/images/girl.png") 200% center / 80% no-repeat,
       url("/src/assets/images/ellipse3.png") 90% bottom/ 15% no-repeat,
       url("/src/assets/images/ellipse2.png") 55% center / 15% no-repeat,
@@ -44,8 +44,15 @@
   }
 
   .header__content {
-    width: 50%;
+    width: 60%;
     margin: 0;
-    text-align: start;
+  }
+
+  .content__title {
+    font-size: 3.9rem;
+  }
+
+  .content__text {
+    font-size: 1.8rem;
   }
 }

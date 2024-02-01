@@ -5,9 +5,9 @@ const About = () => {
     <section id="about" className="about_section">
       <div className="about__title">
         <span className="title__subheading">Innovative</span>
-        <h2 className="title__heading">
+        <h3 className="title__heading">
           Creating beautiful websites that inspire and engage is my passion.
-        </h2>
+        </h3>
       </div>
       <div className="about__content">
         <p className="content">

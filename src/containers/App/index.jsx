@@ -1,6 +1,7 @@
 import Navbar from "@components/Navbar";
 import Header from "@components/Header";
 import About from "@containers/About";
+import Benefits from "@containers/Benefits";
 import "./style.css";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <main>
         <About />
+        <Benefits />
       </main>
     </>
   );

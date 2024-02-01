@@ -16,13 +16,13 @@
 
 /*    Heading      */
 .title__heading {
-  font-size: 2.25rem;
+  font-size: 2.1rem;
   font-weight: 600;
 }
 
 /*    Content      */
 .content {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -36,5 +36,17 @@
   .about__title,
   .about__content {
     width: 50%;
+  }
+
+  .title__subheading {
+    font-size: 1.9rem;
+  }
+
+  .title__heading {
+    font-size: 2.9rem;
+  }
+
+  .content {
+    font-size: 1.48rem;
   }
 }
