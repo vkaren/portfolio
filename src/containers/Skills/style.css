@@ -1,0 +1,104 @@
+/*    Skills section      */
+.skills_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  padding: 8rem;
+  color: var(--white);
+  background: linear-gradient(var(--light-purple), var(--dark-purple));
+}
+
+/*    Content      */
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/*    Title    */
+.skills__content_title {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+/*    Subheading     */
+.skills__content_subheading {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/*    Text     */
+.skills__content_text {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+/*    Skill list     */
+.skill__list {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  padding-bottom: 2rem;
+}
+
+.skill__list::-webkit-scrollbar {
+  width: 5rem;
+  height: 0.7rem;
+  border-radius: 5px;
+  background-color: var(--light-gray);
+}
+.skill__list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--green);
+}
+
+/*    Skill    */
+.skill {
+  min-width: 100%;
+}
+
+.skill::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  background: url("@images/icon-cube-2.png");
+  background-size: cover;
+}
+
+/*    Skill title    */
+.skill__title {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+/*    Skill text     */
+.skill__text {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 700px) {
+  .skills__content {
+    width: 60%;
+  }
+
+  .skills__content_title {
+    font-size: 2.9rem;
+  }
+
+  .skills__content_text {
+    font-size: 1.5rem;
+  }
+
+  .skills__content_subheading {
+    font-size: 1.9rem;
+  }
+
+  .skill {
+    min-width: 33%;
+  }
+}

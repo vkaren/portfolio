@@ -10,7 +10,7 @@
     url("/src/assets/images/ellipse3.png") left bottom/ 45% no-repeat,
     url("/src/assets/images/ellipse2.png") left top / 25% no-repeat,
     url("/src/assets/images/ellipse.png") right center / 35% no-repeat,
-    linear-gradient(var(--purple), var(--light-purple-transparent));
+    linear-gradient(var(--purple) 20%, var(--light-purple-transparent));
 }
 
 /*     Header content     */
@@ -40,7 +40,7 @@
       url("/src/assets/images/ellipse3.png") 90% bottom/ 15% no-repeat,
       url("/src/assets/images/ellipse2.png") 55% center / 15% no-repeat,
       url("/src/assets/images/ellipse.png") right top / 20% no-repeat,
-      linear-gradient(var(--purple), var(--light-purple-transparent));
+      linear-gradient(var(--purple) 20%, var(--light-purple-transparent));
   }
 
   .header__content {

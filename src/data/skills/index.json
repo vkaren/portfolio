@@ -1,0 +1,41 @@
+{
+  "skills": [
+    {
+      "name": "HTML and CSS",
+      "text": "I have a strong foundation in HTML and CSS, ensuring that the websites I build are visually appealing and well-structured."
+    },
+    {
+      "name": "JavaScript",
+      "text": "I am proficient in JavaScript, allowing me to add interactivity and functionality to websites."
+    },
+    {
+      "name": "Responsive Design",
+      "text": "I specialize in creating responsive designs that adapt to different screen sizes and devices."
+    },
+    {
+      "name": "TypeScript",
+      "text": "I am proficient in Typescript."
+    },
+    {
+      "name": "React",
+      "text": "I have extensive experience with React."
+    },
+    {
+      "name": "NextJS",
+      "text": "I am skilled in Nextjs development."
+    },
+    {
+      "name": "Vite",
+      "text": ""
+    },
+    {
+      "name": "Webpack",
+      "text": ""
+    },
+
+    {
+      "name": "Git",
+      "text": ""
+    }
+  ]
+}
