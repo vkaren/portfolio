@@ -42,6 +42,23 @@
   border-bottom-left-radius: 15px;
 }
 
+/*    Overlay on mobile    */
+.navbar__overlay {
+  display: none;
+}
+
+.navbar__overlay.show {
+  display: block;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: var(--transparent-black);
+}
+
 /*    Close icon (on mobile)    */
 .links__close-icon {
   width: 24px;
@@ -121,6 +138,7 @@
     border-radius: 0;
   }
 
+  .navbar__overlay.show,
   .navbar__menu-icon,
   .links__close-icon {
     display: none;

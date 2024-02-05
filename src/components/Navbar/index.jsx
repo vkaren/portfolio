@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
+import { ThemeContext } from "@context/themeContext";
 import LogoIcon from "@components/LogoIcon";
 import "./style.css";
 
 const Navbar = () => {
+  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -39,8 +41,8 @@ const Navbar = () => {
               name="mode"
               type="checkbox"
               aria-label="enable or disable dark mode"
-              //   onChange={toggleDarkTheme}
-              //   checked={darkTheme}
+              onChange={toggleDarkTheme}
+              checked={darkTheme}
             />
             <span className="switch-slider"></span>
           </label>
@@ -48,6 +50,10 @@ const Navbar = () => {
       </ul>
 
       <Bars3Icon onClick={toggleMenu} className="navbar__menu-icon" />
+      <div
+        onClick={toggleMenu}
+        className={`navbar__overlay ${showMenu && "show"}`}
+      ></div>
     </nav>
   );
 };

@@ -1,0 +1,10 @@
+main.dark-mode .about_section,
+main.dark-mode .benefits_section,
+main.dark-mode .projects_section {
+  color: var(--white);
+  background: var(--black);
+}
+
+main.dark-mode .projects_section .tag {
+  background: var(--light-purple);
+}

@@ -31,6 +31,7 @@
 /*    Img container     */
 .project__img {
   width: 100%;
+  min-height: 35%;
   align-self: stretch;
   border: 1.5px solid var(--light-gray);
   border-radius: 5px;
