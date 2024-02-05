@@ -5,13 +5,10 @@ import "./style.css";
 
 const Projects = () => {
   const [projectList, setProjectList] = useState(projects.slice(0, 4));
-  const [loadCount, setLoadCount] = useState(4);
+  const [loadCount, setLoadCount] = useState(8);
 
   const onClickLoadBtn = () => {
-    setProjectList([
-      ...projectList,
-      ...projects.slice(loadCount, loadCount + 4),
-    ]);
+    setProjectList([...projects.slice(0, loadCount)]);
     setLoadCount(loadCount + 4);
   };
 

@@ -3,9 +3,9 @@ import "./style.css";
 const About = () => {
   return (
     <section id="about" className="about_section">
-      <div className="about__title">
+      <div className="about__title_container">
         <span className="title__subheading">Innovative</span>
-        <h3 className="title__heading">
+        <h3 className="title">
           Creating beautiful websites that inspire and engage is my passion.
         </h3>
       </div>

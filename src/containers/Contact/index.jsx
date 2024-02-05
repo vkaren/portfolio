@@ -4,9 +4,9 @@ import "./style.css";
 const Contact = () => {
   return (
     <section id="contact" className="contact_section">
-      <div className="contact__title">
+      <div className="contact__title_container">
         <span className="contact__title_subheading">Get in touch</span>
-        <h2 className="contact__title_heading">Contact me</h2>
+        <h2 className="contact__title">Contact me</h2>
       </div>
 
       <ul className="contact__list">

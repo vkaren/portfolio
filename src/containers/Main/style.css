@@ -1,3 +1,4 @@
+/*    Dark mode styles     */
 main.dark-mode .about_section,
 main.dark-mode .benefits_section,
 main.dark-mode .projects_section {
@@ -7,4 +8,8 @@ main.dark-mode .projects_section {
 
 main.dark-mode .projects_section .tag {
   background: var(--light-purple);
+}
+
+main.dark-mode .projects_section .project__link {
+  color: var(--white);
 }

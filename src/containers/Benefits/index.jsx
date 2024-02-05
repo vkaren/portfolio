@@ -3,7 +3,7 @@ import "./style.css";
 const Benefits = () => {
   return (
     <section className="benefits_section">
-      <div className="benefits__photo"></div>
+      <div className="benefits__my-picture"></div>
 
       <div className="benefits__content">
         <h2 className="benefits__content_title">

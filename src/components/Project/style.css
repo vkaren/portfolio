@@ -3,7 +3,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
   border-radius: 5px;
 }
 
@@ -31,7 +31,7 @@
 /*    Img container     */
 .project__img {
   width: 100%;
-  min-height: 35%;
+  min-height: 25%;
   align-self: stretch;
   border: 1.5px solid var(--light-gray);
   border-radius: 5px;
@@ -62,7 +62,7 @@
   background: var(--light-gray);
 }
 
-/*    View project button    */
+/*    View project link   */
 .project__link {
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@
   text-decoration: none;
 }
 
-/*    Button icon    */
+/*    Link icon    */
 .project__link_chevron-icon {
   width: 16px;
   height: 16px;

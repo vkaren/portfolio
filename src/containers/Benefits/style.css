@@ -9,8 +9,8 @@
   background-color: var(--white);
 }
 
-/*    My photo     */
-.benefits__photo {
+/*    My picture     */
+.benefits__my-picture {
   width: 50vw;
   height: 50vw;
   min-width: 25rem;
