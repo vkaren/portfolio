@@ -24,7 +24,7 @@
 
 /*    Subheading     */
 .skills__content_subheading {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -78,7 +78,7 @@
 
 /*    Skill text     */
 .skill__text {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 700px) {
@@ -95,7 +95,7 @@
   }
 
   .skills__content_subheading {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
   }
 
   .skill {

@@ -3,6 +3,7 @@ import Header from "@components/Header";
 import About from "@containers/About";
 import Benefits from "@containers/Benefits";
 import Skills from "@containers/Skills";
+import Projects from "@containers/Projects";
 import "./style.css";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <About />
         <Benefits />
         <Skills />
+        <Projects />
       </main>
     </>
   );
