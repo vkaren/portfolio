@@ -87,9 +87,9 @@
   font-weight: 500;
   color: var(--white);
   background: linear-gradient(
-    to bottom left,
-    var(--dark-purple),
-    var(--light-purple)
+    to bottom right,
+    var(--light-purple),
+    var(--dark-purple)
   );
 }
 

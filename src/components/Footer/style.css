@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: linear-gradient(var(--dark-purple) 10%, var(--very-dark-purple));
+}
+
+.footer__logo {
+  width: 30px;
+  height: 30px;
+}

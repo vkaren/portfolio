@@ -1,6 +1,7 @@
 :root {
   --purple: #6843fe;
-  --dark-purple: #5127ff;
+  --very-dark-purple: #341b9a;
+  --dark-purple: #3e1fbe;
   --light-purple: #7654ff;
   --light-purple-transparent: rgba(118, 84, 255, 0.81);
   --green: #38f07c;
@@ -105,6 +106,7 @@ h3 {
   font-family: "Lora", serif;
 }
 
+h4,
 p,
 a,
 span {

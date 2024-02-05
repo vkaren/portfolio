@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
-import logoIcon from "@images/icon-logo.png";
+import LogoIcon from "@components/LogoIcon";
 import "./style.css";
 
 const Navbar = () => {
@@ -12,9 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
-        <img alt="logo" src={logoIcon} />
-      </div>
+      <LogoIcon className="navbar__logo" />
 
       <ul className={`navbar__links ${showMenu && "show"}`}>
         <li onClick={toggleMenu}>

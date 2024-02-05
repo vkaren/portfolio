@@ -2,7 +2,7 @@ import "./style.css";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header id="header" className="header">
       <div className="header__content">
         <h1 className="content__title">Hello, World! I'm Karen Varela🌟</h1>
         <p className="content__text">
