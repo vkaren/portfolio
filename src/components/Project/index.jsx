@@ -5,7 +5,7 @@ const Project = ({ title, info, image, tags, url }) => {
   return (
     <li className="project">
       <div className="project__img">
-        <img src={`src/data/${image}`} alt={title} />
+        <img src={image} alt={title} />
       </div>
 
       <h3 className="project__title">{title}</h3>

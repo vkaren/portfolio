@@ -3,17 +3,17 @@
     {
       "url": "karenperarnau@gmail.com",
       "name": "Email",
-      "icon": "contact/icons/icon-email.png"
+      "icon": "icon-email.png"
     },
     {
       "url": "linkedin.com/in/karen-varela-perarnau/",
       "name": "Linkedin",
-      "icon": "contact/icons/icon-linkedin.png"
+      "icon": "icon-linkedin.png"
     },
     {
       "url": "github.com/vkaren",
       "name": "Github",
-      "icon": "contact/icons/icon-link.png"
+      "icon": "icon-link.png"
     }
   ]
 }
