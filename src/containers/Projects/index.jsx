@@ -1,11 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { projects } from "@data/projects";
 import Project from "@components/Project";
 import "./style.css";
 
 const Projects = () => {
   const [projectList, setProjectList] = useState(projects.slice(0, 4));
+  const [projectImages, setProjectImages] = useState([]);
   const [loadCount, setLoadCount] = useState(8);
+
+  useEffect(() => {
+    const loadContactFiles = async () => {
+      try {
+        const files = import.meta.glob("../../data/projects/images/*.png");
+
+        const promises = Object.keys(files).map(async (path) => {
+          const module = await files[path]();
+          return module;
+        });
+
+        const data = await Promise.all(promises);
+
+        setProjectImages(data);
+      } catch (error) {
+        console.error("Error loading JSON files:", error);
+      }
+    };
+
+    loadContactFiles();
+  }, []);
 
   const onClickLoadBtn = () => {
     setProjectList([...projects.slice(0, loadCount)]);
@@ -23,9 +45,15 @@ const Projects = () => {
       </div>
 
       <ul className="project__list">
-        {projectList.map((project, i) => (
-          <Project key={`project-${i}`} {...project} />
-        ))}
+        {projectList.map((project, i) => {
+          const image = projectImages.find((image) => {
+            const imageName = project.image.split(".")[0];
+
+            return image.default.includes(imageName);
+          })?.default;
+
+          return <Project key={`project-${i}`} {...project} image={image} />;
+        })}
       </ul>
 
       {projectList.length !== projects.length && (

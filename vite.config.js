@@ -15,4 +15,7 @@ export default defineConfig({
       "@data": path.resolve(__dirname, "./src/data"),
     },
   },
+  build: {
+    assetsInlineLimit: 0,
+  },
 });

@@ -3,7 +3,7 @@
     {
       "title": "Ara",
       "info": "An application that enables real-time social media interactions.",
-      "image": "projects/images/ara.png",
+      "image": "ara.png",
       "tags": [
         "react",
         "nextjs",
@@ -19,63 +19,63 @@
     {
       "title": "Snake game",
       "info": "The classic game of Snake",
-      "image": "projects/images/snake-game.png",
+      "image": "snake-game.png",
       "tags": ["javascript", "webpack"],
       "url": "https://playsnakee.netlify.app/"
     },
     {
       "title": "Movies REST API",
       "info": "A RESTful API for accessing movie information.",
-      "image": "projects/images/movies-api.png",
+      "image": "movies-api.png",
       "tags": ["express", "sequelize", "pg"],
       "url": "https://github.com/vkaren/movies-api"
     },
     {
       "title": "Interactive comments section",
       "info": "An interactive comment section with real-time updates using localStorage.",
-      "image": "projects/images/interactive-comments.png",
+      "image": "interactive-comments.png",
       "tags": ["react", "nextjs"],
       "url": "https://interactivecommentsss.netlify.app/"
     },
     {
       "title": "Image carousel",
       "info": "A beautiful display of images with seamless transitions.",
-      "image": "projects/images/image-carousel.png",
+      "image": "image-carousel.png",
       "tags": ["react", "webpack"],
       "url": "https://doggoscarousel.netlify.app/"
     },
     {
       "title": "Rock, paper, scissors",
       "info": "An easy game of rock, paper, scissors.",
-      "image": "projects/images/rock-paper-scissors.png",
+      "image": "rock-paper-scissors.png",
       "tags": ["react", "typescript"],
       "url": "https://gamee-rock-paper-scissors.vercel.app/"
     },
     {
       "title": "IP Address Tracker",
       "info": "Track the location of any IP address",
-      "image": "projects/images/ip-address-tracker.png",
+      "image": "ip-address-tracker.png",
       "tags": ["react", "vite", "leaflet"],
       "url": "https://ip-address-tracker-fm.vercel.app/"
     },
     {
       "title": "Shopping list",
       "info": "Organize your shopping list effortlessly.",
-      "image": "projects/images/shopping-list.png",
+      "image": "shopping-list.png",
       "tags": ["react", "vite"],
       "url": "https://myshoppinglisst.netlify.app/"
     },
     {
       "title": "Countdown timer",
       "info": "A basic timer that counts down.",
-      "image": "projects/images/countdown-timer.png",
+      "image": "countdown-timer.png",
       "tags": ["react", "webpack"],
       "url": "https://countdowntimeer.netlify.app/"
     },
     {
       "title": "Memory game",
       "info": "A classic memory game.",
-      "image": "projects/images/memory-game.png",
+      "image": "memory-game.png",
       "tags": ["javascript"],
       "url": "https://playmemory-game.netlify.app/"
     },
@@ -83,7 +83,7 @@
     {
       "title": "Two factor code input",
       "info": "An authentication system that requires a two-factor code for added security.",
-      "image": "projects/images/two-factor-code.png",
+      "image": "two-factor-code.png",
       "tags": ["javascript"],
       "url": "https://twofactorcodeinput.netlify.app/"
     }
