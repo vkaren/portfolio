@@ -1,11 +1,11 @@
-import { useContext, useState } from "react";
-import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
-import { ThemeContext } from "@context/themeContext";
+import { Suspense, lazy, useState } from "react";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 import LogoIcon from "@components/LogoIcon";
 import "./style.css";
 
+const NavbarLinkList = lazy(() => import("./NavbarLinkList"));
+
 const Navbar = () => {
-  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -16,38 +16,9 @@ const Navbar = () => {
     <nav className="navbar">
       <LogoIcon className="navbar__logo" />
 
-      <ul className={`navbar__links ${showMenu && "show"}`}>
-        <li onClick={toggleMenu}>
-          <XMarkIcon className="links__close-icon" />
-        </li>
-
-        <li className="link">
-          <a href="#about">About me</a>
-        </li>
-        <li className="link">
-          <a href="#skills">Skills</a>
-        </li>
-        <li className="link">
-          <a href="#projects">Projects</a>
-        </li>
-        <li className="link">
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <label htmlFor="switch" className="navbar_switch">
-            <input
-              className="switch-checkbox"
-              id="switch"
-              name="mode"
-              type="checkbox"
-              aria-label="enable or disable dark mode"
-              onChange={toggleDarkTheme}
-              checked={darkTheme}
-            />
-            <span className="switch-slider"></span>
-          </label>
-        </li>
-      </ul>
+      <Suspense>
+        <NavbarLinkList showMenu={showMenu} toggleMenu={toggleMenu} />
+      </Suspense>
 
       <Bars3Icon onClick={toggleMenu} className="navbar__menu-icon" />
       <div

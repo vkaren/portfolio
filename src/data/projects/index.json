@@ -84,7 +84,7 @@
       "title": "Two factor code input",
       "info": "An authentication system that requires a two-factor code for added security.",
       "image": "two-factor-code.png",
-      "tags": ["javascript"],
+      "tags": ["typescript"],
       "url": "https://twofactorcodeinput.netlify.app/"
     }
   ]

@@ -1,9 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "@context/themeContext";
 import "./style.css";
 
 const Header = () => {
   const { darkTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    import("./style.bckg.css");
+  }, []);
+
   return (
     <header id="header" className={`header ${darkTheme ? "dark-mode" : null}`}>
       <div className="header__content">

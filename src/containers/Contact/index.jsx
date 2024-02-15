@@ -44,7 +44,7 @@ const Contact = () => {
           return (
             <li key={`contact-${i}`} className="contact">
               <div className="contact__icon">
-                <img src={icon} />
+                <img src={icon} alt={`${contact.name} contact`} />
               </div>
               <h4 className="contact__name">{contact.name}</h4>
               <a

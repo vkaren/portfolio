@@ -1,11 +1,12 @@
-import { useContext } from "react";
+import { Suspense, lazy, useContext } from "react";
 import { ThemeContext } from "@context/themeContext";
 import About from "@containers/About";
-import Benefits from "@containers/Benefits";
-import Skills from "@containers/Skills";
-import Projects from "@containers/Projects";
-import Contact from "@containers/Contact";
 import "./style.css";
+
+const Benefits = lazy(() => import("../Benefits"));
+const Skills = lazy(() => import("../Skills"));
+const Projects = lazy(() => import("../Projects"));
+const Contact = lazy(() => import("../Contact"));
 
 const Main = () => {
   const { darkTheme } = useContext(ThemeContext);
@@ -13,10 +14,12 @@ const Main = () => {
   return (
     <main className={darkTheme ? "dark-mode" : null}>
       <About />
-      <Benefits />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Suspense fallback={<div className="fallback"></div>}>
+        <Benefits />
+        <Skills />
+        <Projects />
+        <Contact />
+      </Suspense>
     </main>
   );
 };

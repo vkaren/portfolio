@@ -13,3 +13,11 @@ main.dark-mode .projects_section .tag {
 main.dark-mode .projects_section .project__link {
   color: var(--white);
 }
+main.dark-mode .fallback {
+  background: var(--black);
+}
+.fallback {
+  width: 100%;
+  height: 100vh;
+  background: var(--white);
+}

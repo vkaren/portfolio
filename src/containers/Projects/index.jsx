@@ -9,7 +9,7 @@ const Projects = () => {
   const [loadCount, setLoadCount] = useState(8);
 
   useEffect(() => {
-    const loadContactFiles = async () => {
+    const loadProjectFiles = async () => {
       try {
         const files = import.meta.glob("../../data/projects/images/*.png");
 
@@ -26,7 +26,7 @@ const Projects = () => {
       }
     };
 
-    loadContactFiles();
+    loadProjectFiles();
   }, []);
 
   const onClickLoadBtn = () => {

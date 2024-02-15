@@ -2,7 +2,9 @@ import { ThemeProvider } from "@context/themeContext";
 import Navbar from "@components/Navbar";
 import Header from "@components/Header";
 import Main from "@containers/Main";
-import Footer from "@components/Footer";
+import { Suspense, lazy } from "react";
+
+const Footer = lazy(() => import("../../components/Footer"));
 
 const App = () => {
   return (
@@ -10,7 +12,10 @@ const App = () => {
       <Navbar />
       <Header />
       <Main />
-      <Footer />
+
+      <Suspense>
+        <Footer />
+      </Suspense>
     </ThemeProvider>
   );
 };
