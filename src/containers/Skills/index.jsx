@@ -1,25 +1,23 @@
-import { skills } from "@data/skills";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 const Skills = () => {
+  const [t] = useTranslation("global");
+
   return (
     <section id="skills" className="skills_section">
       <div className="skills__content">
-        <span className="skills__content_subheading">Frontend</span>
-        <h2 className="skills__content_title">
-          Skills and Technologies I Specialize In
-        </h2>
-        <p className="skills__content_text">
-          As a junior frontend developer, I specialize in a range of skills and
-          technologies that allow me to create dynamic and user-friendly
-          websites.
-        </p>
+        <span className="skills__content_subheading">
+          {t("main.skills.subheading")}
+        </span>
+        <h2 className="skills__content_heading">{t("main.skills.heading")}</h2>
+        <p className="skills__content_text">{t("main.skills.content")}</p>
       </div>
 
       <ul className="skill__list">
-        {skills?.map((skill, i) => (
+        {t("main.skills.list", { returnObjects: true })?.map((skill, i) => (
           <li key={`skill-${i}`} className="skill">
-            <h3 className="skill__title">{skill.name}</h3>
+            <h3 className="skill__heading">{skill.name}</h3>
             <p className="skill__text">{skill.text}</p>
           </li>
         ))}

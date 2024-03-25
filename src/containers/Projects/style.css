@@ -24,7 +24,7 @@
 }
 
 /*    Heading     */
-.projects__content_title {
+.projects__content_heading {
   font-size: 2.3rem;
   font-weight: 700;
 }
@@ -57,7 +57,7 @@
     font-size: 1.3rem;
   }
 
-  .projects__content_title {
+  .projects__content_heading {
     font-size: 2.9rem;
   }
 

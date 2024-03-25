@@ -22,8 +22,8 @@
   border: 1px solid var(--light-purple);
 }
 
-/*    Title     */
-.benefits__content_title {
+/*    Heading    */
+.benefits__content_heading {
   margin-bottom: 1rem;
   font-size: 2.3rem;
   font-weight: 600;
@@ -54,8 +54,8 @@
   background-size: cover;
 }
 
-/*    Benefit title    */
-.benefit__title {
+/*    Benefit heading   */
+.benefit__heading {
   margin-bottom: 4.5px;
   font-size: 2rem;
   font-weight: 600;
@@ -82,7 +82,7 @@
     width: 50%;
   }
 
-  .benefits__content_title {
+  .benefits__content_heading {
     font-size: 3.4rem;
     font-weight: 600;
   }
@@ -96,7 +96,7 @@
     flex-wrap: nowrap;
   }
 
-  .benefit__title {
+  .benefit__heading {
     font-size: 2.4rem;
   }
 

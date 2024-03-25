@@ -16,8 +16,8 @@
   grid-row: span 2;
 }
 
-/*    Title    */
-.project__title {
+/*    Heading    */
+.project__heading {
   font-size: 1.7rem;
   font-weight: 600;
 }
@@ -95,7 +95,7 @@
 }
 
 @media (min-width: 700px) {
-  .project__title {
+  .project__heading {
     font-size: 1.9rem;
   }
 }

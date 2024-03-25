@@ -1,21 +1,17 @@
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 const About = () => {
+  const [t] = useTranslation("global");
+
   return (
     <section id="about" className="about_section">
-      <div className="about__title_container">
-        <span className="title__subheading">Innovative</span>
-        <h3 className="title">
-          Creating beautiful websites that inspire and engage is my passion.
-        </h3>
+      <div className="about__heading_container">
+        <span className="subheading">{t("main.about.subheading")}</span>
+        <h3 className="heading">{t("main.about.heading")}</h3>
       </div>
       <div className="about__content">
-        <p className="content">
-          I’m a 22-year-old on a mission to turn passion into profession.
-          Self-taught and hungry to contribute, I'm actively seeking my debut as
-          a programmer. Dive into my digital playground, where logic meets
-          creativity. Let's code a brighter future together! 💻✨
-        </p>
+        <p className="content">{t("main.about.content")}</p>
       </div>
     </section>
   );

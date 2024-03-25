@@ -1,35 +1,35 @@
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 const Benefits = () => {
+  const [t] = useTranslation("global");
+
   return (
     <section className="benefits_section">
       <div className="benefits__my-picture"></div>
 
       <div className="benefits__content">
-        <h2 className="benefits__content_title">
-          Experience the Power of a Skilled Frontend Developer
+        <h2 className="benefits__content_heading">
+          {t("main.benefits.heading")}
         </h2>
-        <p className="benefits__content_text">
-          By working with me, clients benefit from my expertise in frontend
-          development and my dedication to creating high-quality websites. I
-          strive to understand their unique needs and deliver solutions that
-          exceed their expectations.
-        </p>
+        <p className="benefits__content_text">{t("main.benefits.content")}</p>
 
         <ul className="benefits__content_list">
           <li className="list__benefit">
-            <h3 className="benefit__title">Expertise</h3>
+            <h3 className="benefit__heading">
+              {t("main.benefits.list.expertise.heading")}
+            </h3>
             <p className="benefit__text">
-              I have a solid understanding of frontend development and bring
-              valuable experience to every project.
+              {t("main.benefits.list.expertise.content")}
             </p>
           </li>
 
           <li className="list__benefit">
-            <h3 className="benefit__title">Quality</h3>
+            <h3 className="benefit__heading">
+              {t("main.benefits.list.quality.heading")}
+            </h3>
             <p className="benefit__text">
-              I am committed to delivering websites that are visually stunning,
-              user-friendly, and performant.
+              {t("main.benefits.list.quality.content")}
             </p>
           </li>
         </ul>

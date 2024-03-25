@@ -1,8 +1,10 @@
 import { useContext, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { ThemeContext } from "@context/themeContext";
 import "./style.css";
 
 const Header = () => {
+  const [t] = useTranslation("global");
   const { darkTheme } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -12,10 +14,8 @@ const Header = () => {
   return (
     <header id="header" className={`header ${darkTheme ? "dark-mode" : null}`}>
       <div className="header__content">
-        <h1 className="content__title">Hello, World! I'm Karen Varela🌟</h1>
-        <p className="content__text">
-          Welcome to my portfolio website. Explore my projects and experience.
-        </p>
+        <h1 className="content__heading">{t("header.content.heading")}</h1>
+        <p className="content__text">{t("header.content.text")}</p>
       </div>
     </header>
   );

@@ -16,8 +16,8 @@
   gap: 1rem;
 }
 
-/*    Title    */
-.skills__content_title {
+/*    heading    */
+.skills__content_heading {
   font-size: 2.3rem;
   font-weight: 700;
 }
@@ -69,8 +69,8 @@
   background-size: cover;
 }
 
-/*    Skill title    */
-.skill__title {
+/*    Skill heading    */
+.skill__heading {
   margin-bottom: 1rem;
   font-size: 1.9rem;
   font-weight: 600;
@@ -86,7 +86,7 @@
     width: 60%;
   }
 
-  .skills__content_title {
+  .skills__content_heading {
     font-size: 2.9rem;
   }
 

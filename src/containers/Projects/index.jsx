@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { projects } from "@data/projects";
+import { useTranslation } from "react-i18next";
 import Project from "@components/Project";
 import "./style.css";
 
 const Projects = () => {
+  const [t] = useTranslation("global");
+  const projects = t("main.projects.list", { returnObjects: true });
   const [projectList, setProjectList] = useState(projects.slice(0, 4));
   const [projectImages, setProjectImages] = useState([]);
   const [loadCount, setLoadCount] = useState(8);
@@ -37,11 +39,13 @@ const Projects = () => {
   return (
     <section id="projects" className="projects_section">
       <div className="projects__content">
-        <span className="projects__content_subheading">Portfolio</span>
-        <h2 className="projects__content_title">Highlighting My Work</h2>
-        <p className="projects__content_text">
-          Explore my portfolio and see my latest projects.
-        </p>
+        <span className="projects__content_subheading">
+          {t("main.projects.subheading")}
+        </span>
+        <h2 className="projects__content_heading">
+          {t("main.projects.heading")}
+        </h2>
+        <p className="projects__content_text">{t("main.projects.text")}</p>
       </div>
 
       <ul className="project__list">
@@ -58,7 +62,7 @@ const Projects = () => {
 
       {projectList.length !== projects.length && (
         <button onClick={onClickLoadBtn} className="projects__see_btn">
-          See more
+          {t("main.projects.see-more-btn")}
         </button>
       )}
     </section>

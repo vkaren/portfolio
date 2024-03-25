@@ -9,13 +9,13 @@
 }
 
 /*    Subheading     */
-.title__subheading {
+.subheading {
   font-size: 1.4rem;
   font-weight: 500;
 }
 
 /*    Heading      */
-.title {
+.heading {
   font-size: 2.1rem;
   font-weight: 600;
 }
@@ -33,16 +33,16 @@
     gap: 8rem;
   }
 
-  .about__title_container,
+  .about__heading_container,
   .about__content {
     width: 50%;
   }
 
-  .title__subheading {
+  .subheading {
     font-size: 1.2rem;
   }
 
-  .title {
+  .heading {
     font-size: 2.9rem;
   }
 

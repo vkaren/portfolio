@@ -1,10 +1,11 @@
-import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { ThemeContext } from "@context/themeContext";
+import LanguageSwitch from "@components/LanguageSwitch";
+import DarkModeSwitch from "@components/DarkModeSwitch";
 import "./style.css";
 
 const NavbarLinkList = ({ showMenu, toggleMenu }) => {
-  const { darkTheme, toggleDarkTheme } = useContext(ThemeContext);
+  const [t] = useTranslation("global");
 
   return (
     <ul className={`navbar__links ${showMenu && "show"}`}>
@@ -13,30 +14,22 @@ const NavbarLinkList = ({ showMenu, toggleMenu }) => {
       </li>
 
       <li className="link">
-        <a href="#about">About me</a>
+        <a href="#about">{t("navbar.links.about")}</a>
       </li>
       <li className="link">
-        <a href="#skills">Skills</a>
+        <a href="#skills">{t("navbar.links.skills")}</a>
       </li>
       <li className="link">
-        <a href="#projects">Projects</a>
+        <a href="#projects">{t("navbar.links.projects")}</a>
       </li>
       <li className="link">
-        <a href="#contact">Contact</a>
+        <a href="#contact">{t("navbar.links.contact")}</a>
       </li>
-      <li>
-        <label htmlFor="switch" className="navbar_switch">
-          <input
-            className="switch-checkbox"
-            id="switch"
-            name="mode"
-            type="checkbox"
-            aria-label="enable or disable dark mode"
-            onChange={toggleDarkTheme}
-            checked={darkTheme}
-          />
-          <span className="switch-slider"></span>
-        </label>
+      <li className="link">
+        <LanguageSwitch />
+      </li>
+      <li className="link">
+        <DarkModeSwitch />
       </li>
     </ul>
   );
