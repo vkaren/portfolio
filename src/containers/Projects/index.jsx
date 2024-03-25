@@ -4,11 +4,15 @@ import Project from "@components/Project";
 import "./style.css";
 
 const Projects = () => {
-  const [t] = useTranslation("global");
-  const projects = t("main.projects.list", { returnObjects: true });
-  const [projectList, setProjectList] = useState(projects.slice(0, 4));
+  const [t, i18n] = useTranslation("global");
+  const initialProjects = t("main.projects.list", {
+    returnObjects: true,
+  });
+  const [loadCount, setLoadCount] = useState(4);
+  const [projectList, setProjectList] = useState(
+    initialProjects.slice(0, loadCount)
+  );
   const [projectImages, setProjectImages] = useState([]);
-  const [loadCount, setLoadCount] = useState(8);
 
   useEffect(() => {
     const loadProjectFiles = async () => {
@@ -31,9 +35,23 @@ const Projects = () => {
     loadProjectFiles();
   }, []);
 
+  useEffect(() => {
+    setProjectList(
+      t("main.projects.list", {
+        returnObjects: true,
+      }).slice(0, loadCount)
+    );
+  }, [i18n.language]);
+
   const onClickLoadBtn = () => {
-    setProjectList([...projects.slice(0, loadCount)]);
-    setLoadCount(loadCount + 4);
+    let newLoadCount = loadCount + 4;
+
+    setProjectList(
+      t("main.projects.list", {
+        returnObjects: true,
+      }).slice(0, newLoadCount)
+    );
+    setLoadCount(newLoadCount);
   };
 
   return (
@@ -60,7 +78,7 @@ const Projects = () => {
         })}
       </ul>
 
-      {projectList.length !== projects.length && (
+      {projectList.length !== initialProjects.length && (
         <button onClick={onClickLoadBtn} className="projects__see_btn">
           {t("main.projects.see-more-btn")}
         </button>
