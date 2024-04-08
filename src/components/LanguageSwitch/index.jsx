@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageIcon } from "@heroicons/react/24/outline";
 import "./style.css";
@@ -6,13 +6,7 @@ import "./style.css";
 const LanguageSwitch = () => {
   const [t, i18n] = useTranslation("global");
   const [showOptions, setShowOptions] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(
-    navigator.language.split("-")[0]
-  );
-
-  useEffect(() => {
-    i18n.changeLanguage(selectedLanguage);
-  }, [selectedLanguage]);
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
   const toggleLanguageOptions = () => {
     setShowOptions(!showOptions);
@@ -21,6 +15,7 @@ const LanguageSwitch = () => {
   const onSelectLanguage = (event) => {
     const lng = event.currentTarget.name;
 
+    i18n.changeLanguage(lng);
     setSelectedLanguage(lng);
   };
 
