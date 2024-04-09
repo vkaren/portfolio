@@ -17,15 +17,15 @@
     "about": {
       "heading": "Crear sitios web hermosos que inspiren y cautiven es mi pasión.",
       "subheading": "Innovadora",
-      "content": "Tengo 22 años y estoy en una emocionante misión: convertir mi pasión en mi profesión. Como autodidacta y ansiosa por contribuir, estoy buscando activamente mi debut como programadora. Te invito a sumergirte en mi mundo digital, donde la lógica se entrelaza con la creatividad. 💻✨"
+      "content": "Soy una apasionada desarrolladora autodidacta con experiencia en Full Stack. Mi viaje en el mundo del desarrollo comenzó con una curiosidad innata y un deseo constante de aprender. Te invito a sumergirte en mi mundo digital, donde la lógica se entrelaza con la creatividad. 💻✨"
     },
     "benefits": {
-      "heading": "Descubre el potencial de una desarrolladora frontend junior",
-      "content": "Como desarrolladora frontend junior, aporto ideas frescas y pasión por crear sitios web atractivos. Con mi experiencia, puedes esperar diseños innovadores y experiencias de usuario fluidas.",
+      "heading": "Descubre el potencial de una desarrolladora fullstack junior",
+      "content": "Como desarrolladora fullstack junior, aporto ideas frescas y pasión por crear sitios web atractivos. Con mi sólida base en el desarrollo frontend y habilidades en crecimiento en el desarrollo backend, estoy dispuesta a colaborar para hacer realidad su visión.",
       "list": {
         "expertise": {
           "heading": "Experiencia",
-          "content": "Tengo un sólido entendimiento del desarrollo frontend y aporto una experiencia valiosa a cada proyecto."
+          "content": "Tengo un sólido entendimiento del desarrollo fullstack y aporto una experiencia valiosa a cada proyecto."
         },
         "quality": {
           "heading": "Calidad",
@@ -35,7 +35,7 @@
     },
     "skills": {
       "heading": "Habilidades y tecnologías en las que me especializo",
-      "subheading": "Frontend",
+      "subheading": "Fullstack",
       "content": "Me especializo en una variedad de habilidades y tecnologías que me permiten crear sitios web dinámicos y fáciles de usar.",
       "list": [
         {
@@ -61,6 +61,18 @@
         {
           "name": "NextJS",
           "text": "Con NextJS, puedo desarrollar aplicaciones React renderizadas en el servidor, proporcionando un rendimiento rápido y optimizado."
+        },
+        {
+          "name": "NodeJS",
+          "text": ""
+        },
+        {
+          "name": "Express.js",
+          "text": ""
+        },
+        {
+          "name": "Sequelize.js",
+          "text": ""
         },
         {
           "name": "Vite",

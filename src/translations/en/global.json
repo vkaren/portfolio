@@ -17,15 +17,15 @@
     "about": {
       "heading": "Creating beautiful websites that inspire and engage is my passion.",
       "subheading": "Innovative",
-      "content": "I'm a 22-year-old on a mission to turn passion into profession. Self-taught and hungry to contribute, I'm actively seeking my debut as a programmer. Dive into my digital playground, where logic meets creativity. Let's code a brighter future together! 💻✨"
+      "content": "I am a passionate self-taught developer with experience in Full Stack. My journey in the world of development began with an innate curiosity and a constant desire to learn. Dive into my digital playground, where logic meets creativity. Let's code a brighter future together! 💻✨"
     },
     "benefits": {
-      "heading": "Discover the potential of a junior frontend developer",
-      "content": " As a junior frontend developer, I bring fresh ideas and a passion for creating engaging websites. With my expertise, you can expect innovative designs and seamless user experiences.",
+      "heading": "Discover the potential of a junior fullstack developer",
+      "content": "As a junior fullstack developer, I bring fresh ideas and a passion for learning to every project. With my strong foundation in frontend development and growing skills in backend development, I can help bring your vision to life.",
       "list": {
         "expertise": {
           "heading": "Expertise",
-          "content": "I have a solid understanding of frontend development and bring valuable experience to every project."
+          "content": "I have a solid understanding of fullstack development and bring valuable experience to every project."
         },
         "quality": {
           "heading": "Quality",
@@ -35,7 +35,7 @@
     },
     "skills": {
       "heading": "Skills and Technologies I Specialize In",
-      "subheading": "Frontend",
+      "subheading": "Fullstack",
       "content": "I specialize in a range of skills and technologies that allow me to create dynamic and user-friendly websites.",
       "list": [
         {
@@ -61,6 +61,18 @@
         {
           "name": "NextJS",
           "text": "With NextJS, I can develop server-side rendered React applications, providing fast and optimized performance."
+        },
+        {
+          "name": "NodeJS",
+          "text": ""
+        },
+        {
+          "name": "Express.js",
+          "text": ""
+        },
+        {
+          "name": "Sequelize.js",
+          "text": ""
         },
         {
           "name": "Vite",
