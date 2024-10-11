@@ -1,24 +1,25 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: ["./src/index.jsx"],
+  entry: ["./src/index.tsx"],
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "main.js",
     publicPath: "/",
     assetModuleFilename: "assets/[hash][ext][query]",
-    clean: true,
   },
   mode: "development",
   devtool: "inline-source-map",
   resolve: {
-    extensions: [".js", ".jsx", ".css"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".css"],
     alias: {
       "@icons": path.resolve(__dirname, "src/assets/icons/"),
       "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
       "@context": path.resolve(__dirname, "src/context/"),
       "@data": path.resolve(__dirname, "src/data/"),
     },
@@ -26,7 +27,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(mjs|js|jsx)$/,
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "ts-loader",
+            options: {
+              transpileOnly: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -34,7 +47,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
@@ -54,9 +67,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Portfolio - Karen Varela",
-      favicon: "src/assets/icons/favicon.png",
       template: "./public/index.html",
       inject: true,
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
     }),
   ],
   devServer: {
@@ -65,6 +81,7 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
     open: true,
+    hot: true,
   },
   stats: { errorDetails: true },
 };

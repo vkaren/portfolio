@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-  entry: ["./src/index.jsx"],
+  entry: ["./src/index.tsx"],
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "[name].[contenthash].js",
@@ -15,12 +15,13 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   resolve: {
-    extensions: [".js", ".jsx", ".css"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".css"],
     alias: {
       "@icons": path.resolve(__dirname, "src/assets/icons/"),
       "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
       "@context": path.resolve(__dirname, "src/context/"),
       "@data": path.resolve(__dirname, "src/data/"),
     },
@@ -28,7 +29,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(mjs|js|jsx)$/,
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: "ts-loader",
+      },
+      {
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -37,6 +43,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
