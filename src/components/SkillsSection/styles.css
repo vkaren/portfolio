@@ -1,0 +1,37 @@
+/*      Skills container      */
+.skills_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/*      Skill article      */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*      Skill article - Image     */
+.skill_img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: var(--light-gray);
+}
+
+/*      Skill article - Name     */
+.skill_name {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+/*    Dark theme    */
+.skills_section.dark-theme .skill_name {
+  color: var(--white);
+}

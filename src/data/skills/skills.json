@@ -1,0 +1,40 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "image": "skills/icons/icon-html.png"
+    },
+    {
+      "name": "CSS",
+      "image": "skills/icons/icon-css.png"
+    },
+    {
+      "name": "JavaScript",
+      "image": "skills/icons/icon-js.png"
+    },
+    {
+      "name": "TypeScript",
+      "image": "skills/icons/icon-ts.png"
+    },
+    {
+      "name": "React",
+      "image": "skills/icons/icon-react.png"
+    },
+    {
+      "name": "NextJS",
+      "image": "skills/icons/icon-nextjs.png"
+    },
+    {
+      "name": "Vite",
+      "image": "skills/icons/icon-vite.png"
+    },
+    {
+      "name": "Webpack",
+      "image": "skills/icons/icon-webpack.png"
+    },
+    {
+      "name": "Git",
+      "image": "skills/icons/icon-git.png"
+    }
+  ]
+}

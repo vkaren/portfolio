@@ -1,0 +1,22 @@
+/*      Projects slider     */
+.projects_slider {
+  position: relative;
+  width: 80%;
+  max-width: 70rem;
+  min-width: 20rem;
+}
+
+/*      Projects slider buttons       */
+.projects__slide-back,
+.projects__slide-forward {
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  width: 3rem;
+  height: 3rem;
+}
+.projects__slide-back {
+  left: -5rem;
+}
+.projects__slide-forward {
+  right: -5rem;
+}

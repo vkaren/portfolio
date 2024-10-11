@@ -1,0 +1,19 @@
+{
+  "contact": [
+    {
+      "url": "https://github.com/vkaren",
+      "name": "Github",
+      "icon": "contact/icons/icon-github.png"
+    },
+    {
+      "url": "https://www.linkedin.com/in/karen-varela-290883216",
+      "name": "Linkedin",
+      "icon": "contact/icons/icon-linkedin.png"
+    },
+    {
+      "url": "mailto:karenperarnau@gmail.com",
+      "name": "karenperarnau@gmail.com",
+      "icon": "contact/icons/icon-email.png"
+    }
+  ]
+}
