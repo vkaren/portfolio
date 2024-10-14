@@ -9,9 +9,7 @@ import Header from "@containers/Header";
 const App = () => {
   return (
     <div className="min-h-screen bg-white text-black font-mono">
-      <header className="p-4 border-b border-gray-200 sticky top-0 bg-white z-10">
-        <Navbar />
-      </header>
+      <Navbar />
       <main className="max-w-6xl mx-auto p-8">
         <Header />
         <About />
