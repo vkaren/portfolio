@@ -2,16 +2,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className="mb-12 flex items-center justify-between">
-      <div>
-        <h1 className="text-6xl mb-4">
+    <section className="max-w-[900px] mb-12 mx-auto flex items-center justify-between">
+      <div className="max-w-96">
+        <h1 className="text-6xl tracking-wide mb-4 font-medium">
           hello
           <br />
           world_
         </h1>
-        <p className="text-xl">I&apos;m Karen, a full stack developer</p>
+        <p className="text-2xl">I&apos;m Karen, a full stack developer</p>
       </div>
-      <div className="w-64 h-64 bg-gray-200 rounded-full overflow-hidden">
+      <div className="w-96 h-96 border border-gray-600">
         {/* <Image
         src="/placeholder.svg"
         alt="Karen's profile"
