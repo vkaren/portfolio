@@ -13,9 +13,9 @@ module.exports = {
   mode: "development",
   devtool: "inline-source-map",
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx", ".css"],
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".svg"],
     alias: {
-      "@icons": path.resolve(__dirname, "src/assets/icons/"),
+      "@assets": path.resolve(__dirname, "src/assets/"),
       "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
       "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),

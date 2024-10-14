@@ -19,7 +19,7 @@
     "noEmit": false,
     "baseUrl": ".",
     "paths": {
-      "@icons/*": ["src/assets/icons/*"],
+      "@assets/*": ["src/assets/*"],
       "@fonts/*": ["src/assets/fonts/*"],
       "@pages/*": ["src/pages/*"],
       "@components/*": ["src/components/*"],
