@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@babel/core": "^7.22.8",
@@ -20,6 +23,7 @@
     "@svgr/webpack": "^8.0.1",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
+    "@types/react-slick": "^0.23.13",
     "@types/webpack-env": "^1.18.5",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.1.3",

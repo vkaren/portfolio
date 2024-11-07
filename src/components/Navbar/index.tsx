@@ -1,7 +1,7 @@
 import React from "react";
-// import minIcon from "../../assets/icons/icon-min.svg";
-// import windowIcon from "../../assets/icons/icon-window.svg";
-// import closeIcon from "../../assets/icons/icon-close.svg";
+import MinIcon from "@assets/icons/icon-min.svg";
+import WindowIcon from "@assets/icons/icon-window.svg";
+import CloseIcon from "@assets/icons/icon-close.svg";
 
 const Navbar = () => {
   return (
@@ -21,9 +21,9 @@ const Navbar = () => {
         </a>
       </div>
       <div className="flex space-x-2">
-        {/* <img src={minIcon} alt="icon" />
-        <img src={windowIcon} alt="icon" />
-        <img src={closeIcon} alt="icon" /> */}
+        <MinIcon />
+        <WindowIcon />
+        <CloseIcon />
       </div>
     </nav>
   );

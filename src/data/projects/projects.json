@@ -1,67 +1,30 @@
 {
   "projects": [
     {
-      "title": "Interactive comments section",
-      "info": "A social media app, built just the frontend.",
-      "image": "projects/images/interactive-comments.png",
-      "built-with": ["react", "nextjs"],
-      "url": "https://interactivecommentsss.netlify.app/"
-    },
-    {
-      "title": "Movies REST API",
-      "info": "",
-      "image": "projects/images/movies-api.png",
-      "built-with": ["express", "sequelize", "pg"],
-      "url": "https://github.com/vkaren/movies-api"
+      "title": "Ara",
+      "description": "",
+      "image": "projects/images/ara.png",
+      "built-with": ["javascript", "webpack"],
+      "url": "https://playsnakee.netlify.app/"
     },
     {
       "title": "Snake game",
-      "info": "",
+      "description": "",
       "image": "projects/images/snake-game.png",
       "built-with": ["javascript", "webpack"],
       "url": "https://playsnakee.netlify.app/"
     },
     {
       "title": "Image carousel",
-      "info": "",
+      "description": "",
       "image": "projects/images/image-carousel.png",
       "url": "https://doggoscarousel.netlify.app/"
     },
     {
-      "title": "Shopping list",
-      "info": "A shopping list app where the user can search for an item, add it to their list, set the desired amount, check them off and delete them.",
-      "image": "projects/images/shopping-list.png",
-      "url": "https://myshoppinglisst.netlify.app/"
-    },
-    {
       "title": "Memory game",
-      "info": "",
+      "description": "",
       "image": "projects/images/memory-game.png",
       "url": "https://playmemory-game.netlify.app/"
-    },
-    {
-      "title": "Rock, paper, scissors",
-      "info": "",
-      "image": "projects/images/rock-paper-scissors.png",
-      "url": "https://gamee-rock-paper-scissors.vercel.app/"
-    },
-    {
-      "title": "IP Address Tracker",
-      "info": "",
-      "image": "projects/images/ip-address-tracker.png",
-      "url": "https://ip-address-tracker-fm.vercel.app/"
-    },
-    {
-      "title": "Two factor code input",
-      "info": "A 4-digit security code input app that allows enter a two-factor authorization code.",
-      "image": "projects/images/two-factor-code.png",
-      "url": "https://twofactorcodeinput.netlify.app/"
-    },
-    {
-      "title": "Countdown timer",
-      "info": "",
-      "image": "projects/images/countdown-timer.png",
-      "url": "https://countdowntimeer.netlify.app/"
     }
   ]
 }
