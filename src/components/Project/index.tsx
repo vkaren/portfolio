@@ -10,10 +10,16 @@ export interface ProjectProps {
 }
 
 const Project = ({ title, description, image, url }: ProjectProps) => {
+  const imageUrl = require(`@data/${image}`);
+
   return (
     <div className="min-w-[309px] max-w-[309px] p-4 border border-black">
-      <div className="aspect-[2/1]">
-        <img src={image} alt={title} className="object-cover" />
+      <div className="w-full h-[180px]">
+        <img
+          src={imageUrl}
+          alt={title}
+          className="w-full h-full object-cover object-center"
+        />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>

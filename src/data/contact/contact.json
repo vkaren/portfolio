@@ -6,14 +6,14 @@
       "icon": "contact/icons/icon-github.png"
     },
     {
-      "url": "https://www.linkedin.com/in/karen-varela-290883216",
+      "url": "https://www.linkedin.com/in/karen-varela-perarnau/",
       "name": "Linkedin",
-      "icon": "contact/icons/icon-linkedin.png"
+      "icon": "contact/icons/icon-linkedIn.png"
     },
     {
       "url": "mailto:karenperarnau@gmail.com",
       "name": "karenperarnau@gmail.com",
-      "icon": "contact/icons/icon-email.png"
+      "icon": "contact/icons/icon-gmail.png"
     }
   ]
 }
