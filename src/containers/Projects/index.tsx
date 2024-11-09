@@ -8,7 +8,7 @@ const { projects } = data;
 const Projects = () => {
   return (
     <section id="projects" className="mb-12">
-      <h2 className="text-2xl text-right tracking-wide mb-8">
+      <h2 className="text-2xl text-right font-medium tracking-wide mb-6">
         _recent_projects
       </h2>
       <Carousel

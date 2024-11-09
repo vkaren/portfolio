@@ -9,12 +9,12 @@ import GitImg from "@assets/skills/git.svg";
 const Skills = () => {
   return (
     <div className="flex flex-wrap order-2 sm:-order-none gap-4 mt-5">
-      <TsImg className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
-      <ReactImg className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
-      <NextjsImg className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
-      <TypeormImg className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
-      <JestImg className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
-      <GitImg className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20" />
+      <TsImg className="w-14 h-14 sm:w-16 sm:h-16" />
+      <ReactImg className="w-14 h-14 sm:w-16 sm:h-16" />
+      <NextjsImg className="w-14 h-14 sm:w-16 sm:h-16" />
+      <TypeormImg className="w-14 h-14 sm:w-16 sm:h-16" />
+      <JestImg className="w-14 h-14 sm:w-16 sm:h-16" />
+      <GitImg className="w-14 h-14 sm:w-16 sm:h-16" />
     </div>
   );
 };

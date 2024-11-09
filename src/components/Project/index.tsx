@@ -18,7 +18,7 @@ const Project = ({ title, description, image, url }: ProjectProps) => {
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center grayscale-[60%]"
         />
       </div>
       <div className="p-4">

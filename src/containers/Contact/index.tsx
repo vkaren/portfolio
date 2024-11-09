@@ -6,7 +6,7 @@ const { contact } = data;
 
 const Contact = () => {
   return (
-    <section id="contact" className="flex  items-center gap-6 mt-auto py-4">
+    <section id="contact" className="flex items-center gap-6 mt-auto pt-4">
       <h2 className="text-xl">find_me</h2>
       <div className="flex items-center space-x-4">
         {contact.map((c) => (

@@ -11,8 +11,6 @@ interface CustomArrowProps {
 
 interface CarouselProps {
   items: any[];
-  slidesToShow?: number;
-  slidesToScroll?: number;
 }
 
 const CustomArrow = ({ type, onClick }: CustomArrowProps) => {
@@ -36,49 +34,24 @@ const CustomArrow = ({ type, onClick }: CustomArrowProps) => {
   );
 };
 
-const CustomDots = ({ dots }: { dots: ReactNode }) => {
-  return (
-    <ul
-      className={`flex justify-center items-center gap-1 mt-3
-      [&_li.slick-active_div]:border-none [&_li.slick-active_div]:bg-black 
-      [&_li.slick-active_div]:w-1.5 [&_li.slick-active_div]:h-1.5`}
-    >
-      {dots}
-    </ul>
-  );
-};
-
-const CustomPaging = () => {
-  return <div className="w-2 h-2 border border-black rounded-full"></div>;
-};
-
-const Carousel = ({
-  items,
-  slidesToShow = 3,
-  slidesToScroll = 1,
-}: CarouselProps) => {
+const Carousel = ({ items }: CarouselProps) => {
   const settings: Settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     swipeToSlide: true,
     pauseOnHover: true,
     variableWidth: true,
+    adaptiveHeight: true,
     speed: 500,
-    slidesToShow,
-    slidesToScroll,
     nextArrow: <CustomArrow type="next" />,
     prevArrow: <CustomArrow type="prev" />,
-    appendDots: (dots) => <CustomDots dots={dots} />,
-    customPaging: () => <CustomPaging />,
   };
 
   return (
-    <div className="w-full max-w-[960px] mx-auto ">
-      <Slider {...settings} className="px-4 ">
-        {items}
-      </Slider>
-    </div>
+    <Slider {...settings} className="px-4 w-full max-h-fit">
+      {items}
+    </Slider>
   );
 };
 
