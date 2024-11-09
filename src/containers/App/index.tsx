@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-white text-black font-mono">
       <Navbar />
-      <main className="flex flex-col gap-8 max-w-6xl mx-auto p-8">
+      <main className="flex flex-col gap-8 max-w-6xl mx-auto p-8 sm:p-16">
         <Header />
         <About />
         <Projects />

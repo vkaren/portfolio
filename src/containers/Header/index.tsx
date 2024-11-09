@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className="flex flex-col sm:flex-row sm:justify-center lg:flex-row-reverse lg:items-end lg:justify-end lg:gap-12">
+    <section className="flex flex-col sm:flex-row lg:flex-row-reverse lg:items-end lg:justify-end lg:gap-12">
       <div className="max-w-96">
         <h1 className="text-5xl sm:text-6xl tracking-wide mb-4 font-medium">
           hello
