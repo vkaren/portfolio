@@ -1,4 +1,5 @@
 import React from "react";
+import avatarImg from "@assets/avatar.png";
 
 const Header = () => {
   return (
@@ -12,13 +13,7 @@ const Header = () => {
         <p className="text-xl">I&apos;m Karen, a full stack developer</p>
       </div>
       <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 self-end sm:self-auto border border-gray-600">
-        {/* <Image
-        src="/placeholder.svg"
-        alt="Karen's profile"
-        width={256}
-        height={256}
-        className="object-cover"
-      /> */}
+        <img src={avatarImg} alt="avatar" className="grayscale-[40%]" />
       </div>
     </section>
   );

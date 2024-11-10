@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Slider, { Settings } from "react-slick";
 import { twMerge } from "tailwind-merge";
 import "slick-carousel/slick/slick.css";

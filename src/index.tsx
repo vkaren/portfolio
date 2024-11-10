@@ -39,10 +39,3 @@ const render = (Component: React.ComponentType) => {
 };
 
 render(App);
-
-if (process.env.NODE_ENV === "development" && module.hot) {
-  module.hot.accept("./containers/App", () => {
-    const NextApp = require("./containers/App").default;
-    render(NextApp);
-  });
-}
