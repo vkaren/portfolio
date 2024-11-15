@@ -15,9 +15,9 @@ const Projects = () => {
         {t("projects.title")}
       </h2>
       <Carousel
-        items={projects.map((p, index) => (
+        items={projects.map((p) => (
           <Project
-            key={`project-${index}`}
+            key={p.title}
             title={t(`projects.${p.title}`)}
             description={t(`projects.${p.description}`)}
             image={p.image}

@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "[name].[contenthash].js",
     publicPath: "/",
-    assetModuleFilename: "assets/[hash][ext][query]",
+    assetModuleFilename: "assets/[name].[ext]",
     clean: true,
   },
   mode: "production",
@@ -18,11 +18,8 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".svg"],
     alias: {
       "@assets": path.resolve(__dirname, "src/assets/"),
-      "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
-      "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
       "@containers": path.resolve(__dirname, "src/containers/"),
-      "@context": path.resolve(__dirname, "src/context/"),
       "@data": path.resolve(__dirname, "src/data/"),
     },
   },
@@ -39,10 +36,6 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
-      },
-      {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.css$/i,
@@ -65,10 +58,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Portfolio - Karen Varela",
-      favicon: "src/assets/icons/favicon.png",
+      title: "portfolio_Karen_Varela",
+      favicon: path.resolve(__dirname, "public/favicon.png"),
       template: "./public/index.html",
       inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+      },
     }),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
   ],

@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "main.js",
     publicPath: "/",
-    assetModuleFilename: "assets/[hash][ext][query]",
+    assetModuleFilename: "assets/[name].[ext]",
   },
   mode: "development",
   devtool: "inline-source-map",
@@ -16,11 +16,8 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".svg"],
     alias: {
       "@assets": path.resolve(__dirname, "src/assets/"),
-      "@fonts": path.resolve(__dirname, "src/assets/fonts/"),
-      "@pages": path.resolve(__dirname, "src/pages/"),
       "@components": path.resolve(__dirname, "src/components/"),
       "@containers": path.resolve(__dirname, "src/containers/"),
-      "@context": path.resolve(__dirname, "src/context/"),
       "@data": path.resolve(__dirname, "src/data/"),
     },
   },
@@ -66,7 +63,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Portfolio - Karen Varela",
+      title: "portfolio_Karen_Varela",
       template: "./public/index.html",
       inject: true,
     }),

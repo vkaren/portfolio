@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id="contact" className="flex items-center space-x-4 mt-auto pt-4">
       {contact.map((c) => (
-        <ContactLink title={c.name} href={c.url} icon={c.icon} />
+        <ContactLink key={c.name} title={c.name} href={c.url} icon={c.icon} />
       ))}
     </section>
   );

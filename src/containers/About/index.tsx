@@ -19,7 +19,10 @@ const About = () => {
       </div>
 
       <div className="w-fit h-fit self-center">
-        <TechImg className="w-[245px] h-[218px] sm:w-[305px] sm:h-[278px]" />
+        <TechImg
+          className="w-[245px] h-[218px] sm:w-[305px] sm:h-[278px]"
+          aria-label="PERN Stack"
+        />
       </div>
     </section>
   );
