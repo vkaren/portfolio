@@ -1,0 +1,23 @@
+{
+  "title": "hola mundo_",
+  "subtitle": "Soy Karen ^^, una desarrolladora full stack",
+  "about": {
+    "title": "sobre_mi",
+    "desc": "Hola! Soy una apasionada desarrolladora full stack con 1 año de experiencia. Trabajo con el stack PERN (PostgreSQL, Express, React y NodeJS) y me siento cómoda en el desarrollo tanto de front-end como de back-end. Siempre estoy en busca de nuevas oportunidades para aprender y mejorar mis habilidades."
+  },
+  "projects": {
+    "title": "_proyectos_recientes",
+    "ara": {
+      "title": "Ara",
+      "desc": "Un proyecto inspirado en una red social construido con el stack PERN. Mi primer proyecto full stack!"
+    },
+    "snake": {
+      "title": "Juego de Snake",
+      "desc": "El clásico juego de la serpiente, hecho solo con vanilla JS"
+    },
+    "memory": {
+      "title": "Juego de Memoria",
+      "desc": "Creado con Vanilla JS"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "hello world_",
+  "subtitle": "I'm Karen, a full stack developer",
+  "about": {
+    "title": "about_me",
+    "desc": "Hi! I'm a passionate full stack developer with 1 year of experience. I work with the PERN stack (PostgreSQL, Express, React, and NodeJS), and I feel comfortable in both front-end and back-end development. I'm always looking for new opportunities to learn and improve my skills."
+  },
+  "projects": {
+    "title": "_recent_projects",
+    "ara": {
+      "title": "Ara",
+      "desc": "A social media-inspired project built with the PERN stack. My first full stack project!"
+    },
+    "snake": {
+      "title": "Snake Game",
+      "desc": "The classic snake game, made only with vanilla JS"
+    },
+    "memory": {
+      "title": "Memory Game",
+      "desc": "Built with Vanilla JS"
+    }
+  }
+}

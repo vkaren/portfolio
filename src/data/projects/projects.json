@@ -1,28 +1,22 @@
 {
   "projects": [
     {
-      "title": "Ara",
-      "description": "",
+      "title": "ara.title",
+      "description": "ara.desc",
       "image": "projects/images/ara.png",
       "built-with": ["javascript", "webpack"],
       "url": "https://playsnakee.netlify.app/"
     },
     {
-      "title": "Snake game",
-      "description": "",
+      "title": "snake.title",
+      "description": "snake.desc",
       "image": "projects/images/snake-game.png",
       "built-with": ["javascript", "webpack"],
       "url": "https://playsnakee.netlify.app/"
     },
     {
-      "title": "Image carousel",
-      "description": "",
-      "image": "projects/images/image-carousel.png",
-      "url": "https://doggoscarousel.netlify.app/"
-    },
-    {
-      "title": "Memory game",
-      "description": "",
+      "title": "memory.title",
+      "description": "memory.desc",
       "image": "projects/images/memory-game.png",
       "url": "https://playmemory-game.netlify.app/"
     }

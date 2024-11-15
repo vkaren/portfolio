@@ -1,19 +1,19 @@
 import React from "react";
 import Skills from "@components/Skills";
 import TechImg from "@assets/skills/tech.svg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="flex flex-col sm:flex-row mb-12">
       <div className="flex flex-col gap-4">
         <h2 className="order-1 sm:-order-none text-2xl font-medium tracking-wide">
-          about_me
+          {t("about.title")}
         </h2>
         <p className="order-3 sm:-order-none text-lg font-extralight leading-loose tracking-wide">
-          As a full stack developer, I specialize in creating efficient,
-          scalable web applications. With a strong foundation in both front-end
-          and back-end technologies, I enjoy tackling complex problems and
-          turning innovative ideas into reality.
+          {t("about.desc")}
         </p>
         <Skills />
       </div>

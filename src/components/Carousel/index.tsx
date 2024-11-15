@@ -37,12 +37,32 @@ const CustomArrow = ({ type, onClick }: CustomArrowProps) => {
 const Carousel = ({ items }: CarouselProps) => {
   const settings: Settings = {
     dots: false,
-    infinite: true,
-    autoplay: true,
     swipeToSlide: true,
     pauseOnHover: true,
-    variableWidth: true,
     adaptiveHeight: true,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          variableWidth: true,
+        },
+      },
+      {
+        breakpoint: 940,
+        settings: {
+          slidesToShow: 2,
+          variableWidth: true,
+        },
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+        },
+      },
+    ],
     speed: 500,
     nextArrow: <CustomArrow type="next" />,
     prevArrow: <CustomArrow type="prev" />,
