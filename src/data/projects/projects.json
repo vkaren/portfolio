@@ -5,7 +5,7 @@
       "description": "ara.desc",
       "image": "projects/images/ara.png",
       "built-with": ["javascript", "webpack"],
-      "url": "https://playsnakee.netlify.app/"
+      "url": "https://araa.vercel.app/"
     },
     {
       "title": "snake.title",
