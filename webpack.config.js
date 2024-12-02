@@ -76,7 +76,7 @@ module.exports = {
         "og:url": "https://karenvarela.vercel.app",
         "og:image": {
           property: "og:image",
-          content: "assets/avatar.png",
+          content: "/assets/avatar.png",
         },
         "twitter:card": "summary_large_image",
         "twitter:title": "portfolio_Karen_Varela",
@@ -84,7 +84,7 @@ module.exports = {
           "Descubre mis proyectos, habilidades y experiencia en desarrollo web.",
         "twitter:image": {
           property: "twitter:image",
-          content: "assets/avatar.png",
+          content: "/assets/avatar.png",
         },
       },
       inject: true,
