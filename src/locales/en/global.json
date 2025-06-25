@@ -3,7 +3,7 @@
   "subtitle": "I'm Karen, a full stack developer",
   "about": {
     "title": "about_me",
-    "desc": "Hi! I'm a full stack developer with experience building applications using the PERN stack (PostgreSQL, Express, React, and Node.js). I've developed strong skills in both frontend and backend development. I'm always looking for new challenges that allow me to expand my knowledge and create innovative solutions."
+    "desc": "Hi! I'm a full stack developer with experience building applications using the PERN stack (PostgreSQL, Express, React, and Node.js). I'm always looking for new challenges that allow me to expand my knowledge and create innovative solutions."
   },
   "projects": {
     "title": "_recent_projects",

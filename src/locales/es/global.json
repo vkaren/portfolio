@@ -1,9 +1,9 @@
 {
   "title": "hola mundo_",
-  "subtitle": "Soy Karen ^^, una desarrolladora full stack",
+  "subtitle": "Soy Karen ^^, desarrolladora full stack",
   "about": {
     "title": "sobre_mi",
-    "desc": "Hola! Soy una desarrolladora full stack con experiencia en el desarrollo de aplicaciones utilizando el stack PERN (PostgreSQL, Express, React y Node.js), he adquirido habilidades sólidas tanto en frontend como en backend. Siempre estoy en búsqueda de nuevos desafíos que me permitan ampliar mis conocimientos y aportar soluciones innovadoras."
+    "desc": "Hola! Soy una desarrolladora full stack con experiencia en el desarrollo de aplicaciones utilizando el stack PERN (PostgreSQL, Express, React y Node.js). Siempre estoy en búsqueda de nuevos desafíos que me permitan ampliar mis conocimientos y aportar soluciones innovadoras."
   },
   "projects": {
     "title": "_proyectos_recientes",
