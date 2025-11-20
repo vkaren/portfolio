@@ -13,7 +13,7 @@ const Projects = () => {
       <h2 className="text-3xl font-medium tracking-wide mb-6">
         {t("projects.title")}
       </h2>
-      <div className="flex gap-8">
+      <div className="flex flex-wrap items-center gap-8">
         {projects.map((p) => (
           <Project
             key={p.title}

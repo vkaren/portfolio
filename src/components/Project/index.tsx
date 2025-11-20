@@ -13,7 +13,7 @@ const Project = ({ title, description, image, url }: ProjectProps) => {
   const imageUrl = require(`@data/${image}`);
 
   return (
-    <div className="flex flex-col min-w-[220px] max-w-[220px] sm:min-w-[310px] sm:max-w-[310px] min-h-[385px] max-h-[385px] p-4 border border-black overflow-y-auto">
+    <div className="flex flex-col min-w-[250px] max-w-[250px] sm:min-w-[310px] sm:max-w-[310px] min-h-[385px] max-h-[385px] p-4 border border-black overflow-y-auto">
       <div className="w-full h-[180px]">
         <img
           src={imageUrl}

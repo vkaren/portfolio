@@ -10,20 +10,20 @@ const Header = () => {
   return (
     <section className="flex flex-col gap-4">
       <div className="flex items-center gap-6 mb-4">
-        <div className="w-36 h-36 self-end sm:self-auto border border-gray-600">
+        <div className="max-w-36 max-h-36 self-end sm:self-auto border border-gray-600">
           <img src={avatarImg} alt="avatar" className="grayscale-[40%]" />
         </div>
         <h1 className="text-4xl tracking-wide font-medium">{t("title")}</h1>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row">
         <div className="flex flex-col">
           <p className="text-xl font-extralight leading-loose tracking-wide">
             {t("subtitle")}
           </p>
           <p className="text-lg">{t("about")}</p>
 
-          <div className="flex gap-5 mt-4">
+          <div className="flex flex-wrap gap-5 mt-4">
             <DownloadCV />
             <a
               className="underline tracking-wide"
