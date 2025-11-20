@@ -25,9 +25,21 @@ const Header = () => {
 
           <div className="flex gap-5 mt-4">
             <DownloadCV />
-            <a className="underline tracking-wide">[ LinkedIn ]</a>
+            <a
+              className="underline tracking-wide"
+              href="https://www.linkedin.com/in/karen-perarnau/"
+              target="_blank"
+            >
+              [ LinkedIn ]
+            </a>
 
-            <a className="underline tracking-wide">[ GitHub ]</a>
+            <a
+              className="underline tracking-wide"
+              href="https://github.com/vkaren"
+              target="_blank"
+            >
+              [ GitHub ]
+            </a>
           </div>
         </div>
 

@@ -1,9 +1,11 @@
 import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import CvEs from "@assets/cv/Karen_Varela_CV_ES.pdf";
+import CvEn from "@assets/cv/Karen_Varela_CV_EN.pdf";
 
 const cvByLang: Record<string, string> = {
-  es: "/cv/Karen_Varela_CV_ES.pdf",
-  en: "/cv/Karen_Varela_CV_EN.pdf",
+  es: CvEs,
+  en: CvEn,
 };
 
 const DownloadCV = () => {
@@ -17,8 +19,9 @@ const DownloadCV = () => {
   return (
     <a
       href={cvUrl}
-      type="application/pdf"
-      download="Karen_Varela_CV.pdf"
+      download
+      target="_blank"
+      rel="noopener noreferrer"
       className="underline tracking-wide"
     >
       [ {t("downloadResume")} ]
