@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "@containers/Navbar";
 import Header from "@containers/Header";
-import About from "@containers/About";
 import Projects from "@containers/Projects";
 import Contact from "@containers/Contact";
+import Skills from "@components/Skills";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Navbar />
       <main className="flex flex-col gap-8 max-w-6xl mx-auto p-8 sm:p-16">
         <Header />
-        <About />
+        <Skills />
         <Projects />
         <Contact />
       </main>

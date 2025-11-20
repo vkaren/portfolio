@@ -8,17 +8,11 @@
       "url": "https://araa.vercel.app/"
     },
     {
-      "title": "snake.title",
-      "description": "snake.desc",
-      "image": "projects/images/snake-game.png",
+      "title": "pong.title",
+      "description": "pong.desc",
+      "image": "projects/images/pong.png",
       "built-with": ["javascript", "webpack"],
-      "url": "https://playsnakee.netlify.app/"
-    },
-    {
-      "title": "memory.title",
-      "description": "memory.desc",
-      "image": "projects/images/memory-game.png",
-      "url": "https://playmemory-game.netlify.app/"
+      "url": "https://examples.interaxo.io/pong/server"
     }
   ]
 }

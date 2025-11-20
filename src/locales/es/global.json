@@ -1,23 +1,22 @@
 {
-  "title": "hola mundo_",
-  "subtitle": "Soy Karen ^^, desarrolladora full stack",
-  "about": {
-    "title": "sobre_mi",
-    "desc": "Hola! Soy una desarrolladora full stack con experiencia en el desarrollo de aplicaciones utilizando el stack PERN (PostgreSQL, Express, React y Node.js). Siempre estoy en búsqueda de nuevos desafíos que me permitan ampliar mis conocimientos y aportar soluciones innovadoras."
+  "title": "Hola! Soy Karen 👋",
+  "subtitle": "Full Stack Developer — React · Next.js · Node.js · PostgreSQL",
+  "about": "Cuento con experiencia en el desarrollo de aplicaciones utilizando el stack PERN. Estoy siempre en busca de nuevos desafíos que me permitan ampliar mis conocimientos y aportar soluciones innovadoras.",
+  "downloadResume": "Descargar CV",
+  "technologies": {
+    "title": "Tecnologías",
+    "desc": "Estas son algunas de las tecnologías con las que he trabajado:"
   },
   "projects": {
-    "title": "_proyectos_recientes",
+    "title": "Proyectos Destacados",
     "ara": {
       "title": "Ara",
       "desc": "Un proyecto inspirado en una red social construido con el stack PERN. Mi primer proyecto full stack!"
     },
-    "snake": {
-      "title": "Juego de Snake",
-      "desc": "El clásico juego de la serpiente, hecho solo con vanilla JS"
+    "pong": {
+      "title": "Retro Pong",
+      "desc": "Demo interactiva tipo Pong creada con Next.js y TypeScript, con funciones en tiempo real usando el SDK de Interaxo."
     },
-    "memory": {
-      "title": "Juego de Memoria",
-      "desc": "Creado con Vanilla JS"
-    }
+    "url": "→ Ver proyecto"
   }
 }

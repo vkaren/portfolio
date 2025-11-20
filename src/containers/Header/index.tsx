@@ -1,20 +1,39 @@
 import React from "react";
 import avatarImg from "@assets/avatar.png";
 import { useTranslation } from "react-i18next";
+import TechImg from "@assets/skills/tech.svg";
+import DownloadCV from "@components/DownloadCV";
 
 const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="flex flex-col sm:flex-row sm:gap-12 lg:flex-row-reverse lg:items-end lg:justify-end ">
-      <div className="max-w-64">
-        <h1 className="text-5xl tracking-wide mb-4 font-medium">
-          {t("title")}
-        </h1>
-        <p className="text-xl">{t("subtitle")}</p>
+    <section className="flex flex-col gap-4">
+      <div className="flex items-center gap-6 mb-4">
+        <div className="w-36 h-36 self-end sm:self-auto border border-gray-600">
+          <img src={avatarImg} alt="avatar" className="grayscale-[40%]" />
+        </div>
+        <h1 className="text-4xl tracking-wide font-medium">{t("title")}</h1>
       </div>
-      <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 self-end sm:self-auto border border-gray-600">
-        <img src={avatarImg} alt="avatar" className="grayscale-[40%]" />
+
+      <div className="flex">
+        <div className="flex flex-col">
+          <p className="text-xl font-extralight leading-loose tracking-wide">
+            {t("subtitle")}
+          </p>
+          <p className="text-lg">{t("about")}</p>
+
+          <div className="flex gap-5 mt-4">
+            <DownloadCV />
+            <a className="underline tracking-wide">[ LinkedIn ]</a>
+
+            <a className="underline tracking-wide">[ GitHub ]</a>
+          </div>
+        </div>
+
+        <div className="w-fit h-fit self-center">
+          <TechImg className="w-[245px] h-[218px]" aria-label="PERN Stack" />
+        </div>
       </div>
     </section>
   );

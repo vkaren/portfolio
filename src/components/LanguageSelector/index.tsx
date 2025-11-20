@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import languageImg from "@assets/icons/icon-language.png";
 
 type SupportedLanguage = "en" | "es";
 
@@ -31,12 +32,13 @@ const LanguageSelector = () => {
         <div>
           <button
             type="button"
-            className="flex items-center justify-center w-4 h-4 py-2 px-3 text-base border border-black hover:bg-gray-50"
+            className="flex items-center justify-center p-1 gap-1 text-base border border-black hover:bg-gray-50"
             id="language-menu"
             aria-haspopup="true"
             aria-expanded="true"
             onClick={toggleDropdown}
           >
+            <img src={languageImg} className="w-4 h-4" />
             {language}
           </button>
         </div>

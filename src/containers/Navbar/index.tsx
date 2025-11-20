@@ -2,7 +2,7 @@ import React from "react";
 import MinIcon from "@assets/icons/icon-min.svg";
 import WindowIcon from "@assets/icons/icon-window.svg";
 import CloseIcon from "@assets/icons/icon-close.svg";
-import LanguageSelector from "@components/LanguageSelector/indext";
+import LanguageSelector from "@components/LanguageSelector";
 
 const Navbar = () => {
   return (

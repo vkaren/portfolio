@@ -1,5 +1,5 @@
 import React from "react";
-import CursorIcon from "@assets/icons/icon-cursor.svg";
+import { t } from "i18next";
 
 export interface ProjectProps {
   title: string;
@@ -18,7 +18,7 @@ const Project = ({ title, description, image, url }: ProjectProps) => {
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover object-center grayscale-[60%]"
+          className="w-full h-full object-cover object-center grayscale-[30%]"
         />
       </div>
       <div className="flex-1 gap-2 p-4">
@@ -33,7 +33,7 @@ const Project = ({ title, description, image, url }: ProjectProps) => {
           target="_blank"
           className="self-end mt-auto mb-0"
         >
-          <CursorIcon width={20} height={20} />
+          {t("projects.url")}
         </a>
       )}
     </div>
