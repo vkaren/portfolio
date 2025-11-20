@@ -18,7 +18,7 @@ const Header = () => {
 
       <div className="flex flex-col sm:flex-row">
         <div className="flex flex-col">
-          <p className="text-xl font-extralight leading-loose tracking-wide">
+          <p className="text-xl font-semibold leading-loose tracking-wide">
             {t("subtitle")}
           </p>
           <p className="text-lg">{t("about")}</p>
