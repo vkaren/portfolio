@@ -21,6 +21,7 @@ const Projects = () => {
             description={t(`projects.${p.description}`)}
             image={p.image}
             url={p.url}
+            builtWith={p?.builtWith}
           />
         ))}
       </div>

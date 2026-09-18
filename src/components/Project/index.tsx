@@ -9,11 +9,17 @@ export interface ProjectProps {
   url?: string;
 }
 
-const Project = ({ title, description, image, url }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  image,
+  url,
+  builtWith,
+}: ProjectProps) => {
   const imageUrl = require(`@data/${image}`);
 
   return (
-    <div className="flex flex-col min-w-[250px] max-w-[250px] sm:min-w-[310px] sm:max-w-[310px] min-h-[385px] max-h-[385px] p-4 border border-black overflow-y-auto">
+    <div className="flex flex-col min-w-[250px] max-w-[250px] sm:min-w-[310px] sm:max-w-[310px] min-h-[460px] max-h-[460px] p-4 border border-black overflow-y-auto">
       <div className="w-full h-[180px]">
         <img
           src={imageUrl}
@@ -24,6 +30,14 @@ const Project = ({ title, description, image, url }: ProjectProps) => {
       <div className="flex-1 gap-2 p-4">
         <h3 className="text-lg font-semibold">{title}</h3>
         <p className="text-sm font-medium">{description}</p>
+      </div>
+
+      <div className="flex flex-wrap gap-2 my-3">
+        {builtWith?.map((tech) => (
+          <span className="border border-black px-2 py-0.5 text-xs font-mono bg-white">
+            {tech}
+          </span>
+        ))}
       </div>
 
       {url && (

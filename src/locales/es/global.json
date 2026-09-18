@@ -13,10 +13,6 @@
       "title": "Ara",
       "desc": "Un proyecto inspirado en una red social construido con el stack PERN. Mi primer proyecto full stack!"
     },
-    "pong": {
-      "title": "Retro Pong",
-      "desc": "Demo interactiva tipo Pong creada con Next.js y TypeScript, con funciones en tiempo real usando el SDK de Interaxo."
-    },
     "url": "→ Ver proyecto"
   }
 }

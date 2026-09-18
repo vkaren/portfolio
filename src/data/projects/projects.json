@@ -4,15 +4,15 @@
       "title": "ara.title",
       "description": "ara.desc",
       "image": "projects/images/ara.png",
-      "built-with": ["javascript", "webpack"],
+      "builtWith": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "JWT"
+      ],
       "url": "https://araa.vercel.app/"
-    },
-    {
-      "title": "pong.title",
-      "description": "pong.desc",
-      "image": "projects/images/pong.png",
-      "built-with": ["javascript", "webpack"],
-      "url": "https://examples.interaxo.io/pong/server"
     }
   ]
 }
